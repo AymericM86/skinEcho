@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class VibrationSpot : MonoBehaviour {
+public abstract class VibrationSpot : MonoBehaviour {
 
     [SerializeField]
     private float m_distanceToStartDetect = 2;
@@ -12,19 +12,20 @@ public class VibrationSpot : MonoBehaviour {
     private float m_distanceToNearestController;
     [SerializeField]
     private float m_timeBetweenVibrationAtStart = 0.5f;
-
+    [SerializeField]
+    private ushort m_minRumbleIntensity = 500;
+    [SerializeField]
+    private ushort m_maxRumbleIntensity = 3500;
 
     [Header("SteamVR")]
     [SerializeField]
-    private SteamVR_TrackedObject m_trackedObj1;
+    protected SteamVR_TrackedObject m_controllerLeft;
     [SerializeField]
-    private SteamVR_TrackedObject m_trackedObj2;
-
-    private float m_timeElapsed1 = 0;
-    private float m_timeElapsed2 = 0;
+    protected SteamVR_TrackedObject m_controllerRight;
+    
     private bool m_vibrate1 = false;
     private bool m_vibrate2 = false;
-    private bool m_isFound = false;
+    protected bool m_isFound = false;
     private float m_distanceStartVibratingController1 = 0;
     private float m_distanceStartVibratingController2 = 0;
     private float m_vibrationDurationController1 = 0;
@@ -33,12 +34,9 @@ public class VibrationSpot : MonoBehaviour {
     private bool m_controller1IsVibrating = false;
     private bool m_controller2IsVibrating = false;
 
-    private Material m_debugMaterial;
-
     private void Start()
     {
-        MeshRenderer renderer = GetComponentInChildren<MeshRenderer>();
-        m_debugMaterial = renderer.material;
+
     }
 
     // Update is called once per frame
@@ -49,7 +47,7 @@ public class VibrationSpot : MonoBehaviour {
         bool foundController1 = false;
         bool foundController2 = false;
 
-        if ((distance = GetDistance(m_trackedObj1)) <= m_distanceToStartDetect)
+        if ((distance = GetDistance(m_controllerLeft)) <= m_distanceToStartDetect)
         {
             m_distanceToNearestController = distance;
 
@@ -68,7 +66,7 @@ public class VibrationSpot : MonoBehaviour {
                 StartCoroutine(LongVibrationController1());
         }
 
-        if ((distance = GetDistance(m_trackedObj2)) <= m_distanceToStartDetect)
+        if ((distance = GetDistance(m_controllerRight)) <= m_distanceToStartDetect)
         {
             if(m_distanceToNearestController > distance)
                 m_distanceToNearestController = distance;
@@ -90,16 +88,9 @@ public class VibrationSpot : MonoBehaviour {
         }
 
         // Debug
-        if (foundController1 || foundController2)
-        {
-            m_debugMaterial.color = Color.green;
-            m_isFound = true;
-        }
-        else
-        {
-            m_debugMaterial.color = Color.white;
-            m_isFound = false;
-        }
+        InSpot(foundController1, foundController2);
+        NotInSpot(!foundController1, !foundController2);
+
     }
 
     private void OnDrawGizmos()
@@ -128,12 +119,12 @@ public class VibrationSpot : MonoBehaviour {
             m_vibrationDurationController1 = Mathf.Lerp(0, m_timeBetweenVibrationAtStart, (m_distanceStartVibratingController1 / m_distanceToStartDetect));
             for (float i = 0; i < m_vibrationDurationController1; i += Time.deltaTime)
             {
-                SteamVR_Controller.Input((int)m_trackedObj1.index).TriggerHapticPulse((ushort)Mathf.Lerp(500, 2000, 1 - ((m_distanceStartVibratingController1 - m_distanceMaxRumble) / (m_distanceToStartDetect - m_distanceMaxRumble))));
+                SteamVR_Controller.Input((int)m_controllerLeft.index).TriggerHapticPulse((ushort)Mathf.Lerp(m_minRumbleIntensity, m_maxRumbleIntensity, 1 - ((m_distanceStartVibratingController1 - m_distanceMaxRumble) / (m_distanceToStartDetect - m_distanceMaxRumble))));
                 yield return null;
             }
         }
         else
-            SteamVR_Controller.Input((int)m_trackedObj1.index).TriggerHapticPulse(3500);
+            SteamVR_Controller.Input((int)m_controllerLeft.index).TriggerHapticPulse(m_maxRumbleIntensity);
 
         m_controller1IsVibrating = false;
     }
@@ -146,12 +137,12 @@ public class VibrationSpot : MonoBehaviour {
             m_vibrationDurationController2 = Mathf.Lerp(0, m_timeBetweenVibrationAtStart, (m_distanceStartVibratingController2 / m_distanceToStartDetect));
             for (float i = 0; i < m_vibrationDurationController2; i += Time.deltaTime)
             {
-                SteamVR_Controller.Input((int)m_trackedObj2.index).TriggerHapticPulse((ushort)Mathf.Lerp(500, 2000, 1 - ((m_distanceStartVibratingController2 - m_distanceMaxRumble )/ (m_distanceToStartDetect - m_distanceMaxRumble))));
+                SteamVR_Controller.Input((int)m_controllerRight.index).TriggerHapticPulse((ushort)Mathf.Lerp(m_minRumbleIntensity, m_maxRumbleIntensity, 1 - ((m_distanceStartVibratingController2 - m_distanceMaxRumble )/ (m_distanceToStartDetect - m_distanceMaxRumble))));
                 yield return null;
             }
         }
         else
-            SteamVR_Controller.Input((int)m_trackedObj2.index).TriggerHapticPulse(3500);
+            SteamVR_Controller.Input((int)m_controllerRight.index).TriggerHapticPulse(m_maxRumbleIntensity);
 
         m_controller2IsVibrating = false;
     }
@@ -160,4 +151,8 @@ public class VibrationSpot : MonoBehaviour {
     {
         return m_isFound;
     }
+
+    public abstract void InSpot(bool leftHand, bool rightHand);
+
+    public abstract void NotInSpot(bool leftHand, bool rightHand);
 }
