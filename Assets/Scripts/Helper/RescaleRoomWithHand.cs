@@ -27,8 +27,6 @@ public class RescaleRoomWithHand : GameSequence
         {
             Vector3 averageControllerPosition = (m_leftController.transform.position + m_rightController.transform.position) / 2;
             Vector3 headPosition = m_camera.transform.position;
-            Debug.Log(averageControllerPosition);
-            Debug.Log(headPosition);
 
             float radius = Vector2.Distance(new Vector2(headPosition.x,headPosition.z), new Vector2(averageControllerPosition.x, averageControllerPosition.z)) * 2;
             m_room.transform.position = new Vector3(headPosition.x, averageControllerPosition.y, headPosition.z);

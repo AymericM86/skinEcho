@@ -18,6 +18,8 @@ public abstract class GameSequence : MonoBehaviour {
         {
             gameObject.SetActive(false);
         }
+        else
+            DoInStart();
     }
 
     private void Update()
@@ -34,6 +36,7 @@ public abstract class GameSequence : MonoBehaviour {
     {
         m_isRunning = true;
         gameObject.SetActive(true);
+        DoInStart();
     }
 
     private void LaunchNextSequence()
@@ -51,6 +54,11 @@ public abstract class GameSequence : MonoBehaviour {
     public abstract bool IsTerminated();
 
     public virtual void DoInUpdate()
+    {
+
+    }
+
+    public virtual void DoInStart()
     {
 
     }
