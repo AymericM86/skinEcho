@@ -9,7 +9,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b2616f13a6760914598e2eab7def79ee, type: 3}
-  m_Name: AkWwiseProjectData
+  m_Name: AkWwiseProjectData 1
   m_EditorClassIdentifier: 
   CurrentPluginConfig: 
   EventWwu:
@@ -34,7 +34,7 @@ MonoBehaviour:
       Guid: c1e4cdfdd7329044a34792a5d9d309f4
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 1000000
+      maxAttenuation: 0
     - Name: Play_Proto_2_Voix_005
       Path: Default Work Unit\Voices\Voix_Radio\Play_Proto_2_Voix_005
       PathAndIcons:
@@ -50,7 +50,7 @@ MonoBehaviour:
       Guid: 992b02b649fff8498538ba286d0dd263
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 1000000
+      maxAttenuation: 0
     - Name: Play_Proto_2_Voix_006
       Path: Default Work Unit\Voices\Voix_Radio\Play_Proto_2_Voix_006
       PathAndIcons:
@@ -66,7 +66,7 @@ MonoBehaviour:
       Guid: ba1dffbfc620684fa99ca2088ffe840c
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 1000000
+      maxAttenuation: 0
     - Name: Play_Proto_2_Voix_007
       Path: Default Work Unit\Voices\Voix_Radio\Play_Proto_2_Voix_007
       PathAndIcons:
@@ -82,7 +82,7 @@ MonoBehaviour:
       Guid: 9e03923e336e9e45949bbaef5e1a236e
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 1000000
+      maxAttenuation: 0
     - Name: Play_Proto_2_Voix_008
       Path: Default Work Unit\Voices\Voix_Radio\Play_Proto_2_Voix_008
       PathAndIcons:
@@ -98,7 +98,7 @@ MonoBehaviour:
       Guid: 45e8c71e9aac804f906f0ff5acd7172c
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 1000000
+      maxAttenuation: 0
     - Name: Play_Proto_2_Voix_009
       Path: Default Work Unit\Voices\Voix_Radio\Play_Proto_2_Voix_009
       PathAndIcons:
@@ -114,7 +114,7 @@ MonoBehaviour:
       Guid: 5889efaa553d5a45adff1b1ba1326397
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 1000000
+      maxAttenuation: 0
     - Name: Play_Proto_2_Voix_010
       Path: Default Work Unit\Voices\Voix_Radio\Play_Proto_2_Voix_010
       PathAndIcons:
@@ -130,7 +130,7 @@ MonoBehaviour:
       Guid: beb017ddbb7eb743ba1bf6fd67e05416
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 1000000
+      maxAttenuation: 0
     - Name: Play_Proto_2_Voix_011
       Path: Default Work Unit\Voices\Voix_Radio\Play_Proto_2_Voix_011
       PathAndIcons:
@@ -146,7 +146,7 @@ MonoBehaviour:
       Guid: 889ce719d0ff9043a1447e4269d9b74a
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 1000000
+      maxAttenuation: 0
     - Name: Play_Proto_2_Voix_012
       Path: Default Work Unit\Voices\Voix_Radio\Play_Proto_2_Voix_012
       PathAndIcons:
@@ -162,7 +162,7 @@ MonoBehaviour:
       Guid: c1e17702fa3c8e4684ef5a871030d364
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 1000000
+      maxAttenuation: 0
     - Name: Play_Proto_2_Voix_AI_001
       Path: Default Work Unit\Voices\Voix_AI\Play_Proto_2_Voix_AI_001
       PathAndIcons:
@@ -178,7 +178,7 @@ MonoBehaviour:
       Guid: 89572502f14ecd4a9998cb707eb6e7ef
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 1000000
+      maxAttenuation: 0
     - Name: Play_Proto_2_Voix_AI_002
       Path: Default Work Unit\Voices\Voix_AI\Play_Proto_2_Voix_AI_002
       PathAndIcons:
@@ -194,7 +194,7 @@ MonoBehaviour:
       Guid: 29d3d5fef7e51f4f86643fd27c90b805
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 1000000
+      maxAttenuation: 0
     - Name: Play_Proto_2_Voix_AI_003
       Path: Default Work Unit\Voices\Voix_AI\Play_Proto_2_Voix_AI_003
       PathAndIcons:
@@ -210,7 +210,7 @@ MonoBehaviour:
       Guid: a504aa0fe0aa574fbf696c3ce65b677c
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 1000000
+      maxAttenuation: 0
     - Name: Play_Radio_Voice_Start
       Path: Default Work Unit\Voices\Voix_Radio\Play_Radio_Voice_Start
       PathAndIcons:
@@ -226,7 +226,7 @@ MonoBehaviour:
       Guid: b44ea88714a80d46b8b78e6887f6ecc0
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 1000000
+      maxAttenuation: 0
     - Name: Play_SFX_Ambiance_01
       Path: Default Work Unit\Play_SFX_Ambiance_01
       PathAndIcons:
@@ -259,8 +259,8 @@ MonoBehaviour:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{BE61F919-3006-4E78-BCC4-9AD65A681F2F}'
-    m_lastTimePsrt1: 1371001441
-    m_lastTimePart2: -1999264683
+    m_lastTimePsrt1: -2146350127
+    m_lastTimePart2: -1999265866
     List:
     - Name: Reverb_Submarine
       Path: Default Work Unit\Master Audio Bus\Main_5_1\Reverb_Submarine
@@ -600,15 +600,7 @@ MonoBehaviour:
         ObjectType: 15
       ID: 1755085759
       Guid: 8e474652dac50c4ea0dec98d1479529a
-  ExpandedItems:
-  - /Wwise_SkinEcho
-  - /Wwise_SkinEcho/Events
-  - /Wwise_SkinEcho/Events/Default Work Unit
-  - /Wwise_SkinEcho/Events/Default Work Unit/Voices
-  - /Wwise_SkinEcho/Events/Default Work Unit/Voices/Voix_AI
-  - /Wwise_SkinEcho/Events/Default Work Unit/Voices/Voix_Radio
-  - /Wwise_SkinEcho/SoundBanks
-  - /Wwise_SkinEcho/SoundBanks/Default Work Unit
+  ExpandedItems: []
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1
