@@ -34,11 +34,6 @@ public abstract class VibrationSpot : MonoBehaviour {
     private bool m_controller1IsVibrating = false;
     private bool m_controller2IsVibrating = false;
 
-    private void Start()
-    {
-
-    }
-
     // Update is called once per frame
     void Update ()
     {
@@ -86,14 +81,13 @@ public abstract class VibrationSpot : MonoBehaviour {
                 StartCoroutine(LongVibrationController2());
 
         }
+        
 
-        // Debug
         InSpot(foundController1, foundController2);
-        NotInSpot(!foundController1, !foundController2);
 
     }
 
-    private void OnDrawGizmos()
+    private void OnDrawGizmosSelected()
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, m_distanceToStartDetect);
@@ -152,7 +146,11 @@ public abstract class VibrationSpot : MonoBehaviour {
         return m_isFound;
     }
 
-    public abstract void InSpot(bool leftHand, bool rightHand);
+    public void SetControllers(SteamVR_TrackedObject left, SteamVR_TrackedObject right)
+    {
+        m_controllerLeft = left;
+        m_controllerRight = right;
+    }
 
-    public abstract void NotInSpot(bool leftHand, bool rightHand);
+    public abstract void InSpot(bool leftHand, bool rightHand);
 }

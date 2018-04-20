@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class VibrationButton : VibrationSpot {
+public class VibrationBreachSpot : VibrationSpot
+{
     [SerializeField]
     float m_timeToLock = 0.5f;
     Timer m_timerRight = new Timer();
@@ -19,7 +20,7 @@ public class VibrationButton : VibrationSpot {
         if (m_isFound)
             return;
 
-        if (leftHand)
+        if (leftHand && m_controllerLeft.CompareTag("Blowtorch"))
         {
             m_timerLeft.UpdateTimer();
             m_isFound = m_timerLeft.IsTimedOut();
@@ -30,7 +31,7 @@ public class VibrationButton : VibrationSpot {
         if (m_isFound)
             return;
 
-        if (rightHand)
+        if (rightHand && m_controllerRight.CompareTag("Blowtorch"))
         {
             m_timerRight.UpdateTimer();
             m_isFound = m_timerRight.IsTimedOut();

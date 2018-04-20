@@ -23,9 +23,5 @@ public class Item : VibrationSpot
             }
         }
     }
-
-    public override void NotInSpot(bool leftHand, bool rightHand)
-    {
-        
-    }
+    
 }
