@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Blowtorch
+  - Oxygene
   layers:
   - Default
   - TransparentFX

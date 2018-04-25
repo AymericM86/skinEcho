@@ -9,16 +9,112 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b2616f13a6760914598e2eab7def79ee, type: 3}
-  m_Name: AkWwiseProjectData
+  m_Name: AkWwiseProjectData 49
   m_EditorClassIdentifier: 
   CurrentPluginConfig: 
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{D1B5A9E8-5947-45C1-B2F0-400D504E3082}'
-    m_lastTimePsrt1: -1792017244
-    m_lastTimePart2: -1999265871
+    m_lastTimePsrt1: 1514163433
+    m_lastTimePart2: -1999263033
     List:
+    - Name: Play_Niveau_Ox_10
+      Path: Default Work Unit\Voices\Oxygen Level\Play_Niveau_Ox_10
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Voices
+        ObjectType: 4
+      - ElementName: Oxygen Level
+        ObjectType: 4
+      - ElementName: Play_Niveau_Ox_10
+        ObjectType: 3
+      ID: 189687746
+      Guid: 28e5fe388ba27346b34cc25b7b118dd6
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Play_Niveau_Ox_15
+      Path: Default Work Unit\Voices\Oxygen Level\Play_Niveau_Ox_15
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Voices
+        ObjectType: 4
+      - ElementName: Oxygen Level
+        ObjectType: 4
+      - ElementName: Play_Niveau_Ox_15
+        ObjectType: 3
+      ID: 189687751
+      Guid: e2cd540ce4dd5542aee896a3baef9290
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Play_Niveau_Ox_25
+      Path: Default Work Unit\Voices\Oxygen Level\Play_Niveau_Ox_25
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Voices
+        ObjectType: 4
+      - ElementName: Oxygen Level
+        ObjectType: 4
+      - ElementName: Play_Niveau_Ox_25
+        ObjectType: 3
+      ID: 172910186
+      Guid: 8094630029032448b88849b87a7c3352
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Play_Niveau_Ox_5
+      Path: Default Work Unit\Voices\Oxygen Level\Play_Niveau_Ox_5
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Voices
+        ObjectType: 4
+      - ElementName: Oxygen Level
+        ObjectType: 4
+      - ElementName: Play_Niveau_Ox_5
+        ObjectType: 3
+      ID: 495794050
+      Guid: 7996bc6d8d064a429fe734a637bc7be4
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Play_Niveau_Ox_50
+      Path: Default Work Unit\Voices\Oxygen Level\Play_Niveau_Ox_50
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Voices
+        ObjectType: 4
+      - ElementName: Oxygen Level
+        ObjectType: 4
+      - ElementName: Play_Niveau_Ox_50
+        ObjectType: 3
+      ID: 122577302
+      Guid: a9c7ac6c4857e440bfa562fbf1fbefe2
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Play_Niveau_Ox_75
+      Path: Default Work Unit\Voices\Oxygen Level\Play_Niveau_Ox_75
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Voices
+        ObjectType: 4
+      - ElementName: Oxygen Level
+        ObjectType: 4
+      - ElementName: Play_Niveau_Ox_75
+        ObjectType: 3
+      ID: 89022133
+      Guid: 4f040b5c8b97984781529d48bb8df7fd
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
     - Name: Play_Proto_2_Voix_004
       Path: Default Work Unit\Voices\Voix_Radio\Play_Proto_2_Voix_004
       PathAndIcons:
@@ -34,7 +130,7 @@ MonoBehaviour:
       Guid: c1e4cdfdd7329044a34792a5d9d309f4
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 1000000
+      maxAttenuation: 0
     - Name: Play_Proto_2_Voix_005
       Path: Default Work Unit\Voices\Voix_Radio\Play_Proto_2_Voix_005
       PathAndIcons:
@@ -50,7 +146,7 @@ MonoBehaviour:
       Guid: 992b02b649fff8498538ba286d0dd263
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 1000000
+      maxAttenuation: 0
     - Name: Play_Proto_2_Voix_006
       Path: Default Work Unit\Voices\Voix_Radio\Play_Proto_2_Voix_006
       PathAndIcons:
@@ -66,7 +162,7 @@ MonoBehaviour:
       Guid: ba1dffbfc620684fa99ca2088ffe840c
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 1000000
+      maxAttenuation: 0
     - Name: Play_Proto_2_Voix_007
       Path: Default Work Unit\Voices\Voix_Radio\Play_Proto_2_Voix_007
       PathAndIcons:
@@ -82,7 +178,7 @@ MonoBehaviour:
       Guid: 9e03923e336e9e45949bbaef5e1a236e
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 1000000
+      maxAttenuation: 0
     - Name: Play_Proto_2_Voix_008
       Path: Default Work Unit\Voices\Voix_Radio\Play_Proto_2_Voix_008
       PathAndIcons:
@@ -98,7 +194,7 @@ MonoBehaviour:
       Guid: 45e8c71e9aac804f906f0ff5acd7172c
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 1000000
+      maxAttenuation: 0
     - Name: Play_Proto_2_Voix_009
       Path: Default Work Unit\Voices\Voix_Radio\Play_Proto_2_Voix_009
       PathAndIcons:
@@ -114,7 +210,7 @@ MonoBehaviour:
       Guid: 5889efaa553d5a45adff1b1ba1326397
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 1000000
+      maxAttenuation: 0
     - Name: Play_Proto_2_Voix_010
       Path: Default Work Unit\Voices\Voix_Radio\Play_Proto_2_Voix_010
       PathAndIcons:
@@ -130,7 +226,7 @@ MonoBehaviour:
       Guid: beb017ddbb7eb743ba1bf6fd67e05416
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 1000000
+      maxAttenuation: 0
     - Name: Play_Proto_2_Voix_011
       Path: Default Work Unit\Voices\Voix_Radio\Play_Proto_2_Voix_011
       PathAndIcons:
@@ -146,7 +242,7 @@ MonoBehaviour:
       Guid: 889ce719d0ff9043a1447e4269d9b74a
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 1000000
+      maxAttenuation: 0
     - Name: Play_Proto_2_Voix_012
       Path: Default Work Unit\Voices\Voix_Radio\Play_Proto_2_Voix_012
       PathAndIcons:
@@ -162,7 +258,7 @@ MonoBehaviour:
       Guid: c1e17702fa3c8e4684ef5a871030d364
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 1000000
+      maxAttenuation: 0
     - Name: Play_Proto_2_Voix_AI_001
       Path: Default Work Unit\Voices\Voix_AI\Play_Proto_2_Voix_AI_001
       PathAndIcons:
@@ -178,7 +274,7 @@ MonoBehaviour:
       Guid: 89572502f14ecd4a9998cb707eb6e7ef
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 1000000
+      maxAttenuation: 0
     - Name: Play_Proto_2_Voix_AI_002
       Path: Default Work Unit\Voices\Voix_AI\Play_Proto_2_Voix_AI_002
       PathAndIcons:
@@ -194,7 +290,7 @@ MonoBehaviour:
       Guid: 29d3d5fef7e51f4f86643fd27c90b805
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 1000000
+      maxAttenuation: 0
     - Name: Play_Proto_2_Voix_AI_003
       Path: Default Work Unit\Voices\Voix_AI\Play_Proto_2_Voix_AI_003
       PathAndIcons:
@@ -210,7 +306,7 @@ MonoBehaviour:
       Guid: a504aa0fe0aa574fbf696c3ce65b677c
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 1000000
+      maxAttenuation: 0
     - Name: Play_Radio_Voice_Start
       Path: Default Work Unit\Voices\Voix_Radio\Play_Radio_Voice_Start
       PathAndIcons:
@@ -226,7 +322,7 @@ MonoBehaviour:
       Guid: b44ea88714a80d46b8b78e6887f6ecc0
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 1000000
+      maxAttenuation: 0
     - Name: Play_SFX_Ambiance_01
       Path: Default Work Unit\Play_SFX_Ambiance_01
       PathAndIcons:
@@ -236,6 +332,88 @@ MonoBehaviour:
         ObjectType: 3
       ID: 1281001716
       Guid: 07bd4e3879c04544aeaf65cb40e2be55
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Play_SFX_Button_Press
+      Path: Default Work Unit\Play_SFX_Button_Press
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_SFX_Button_Press
+        ObjectType: 3
+      ID: 1223272146
+      Guid: f0870ffd05eaac4eb79983af857bd803
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Play_SFX_Monster_Calm_01
+      Path: Default Work Unit\Monster\Play_SFX_Monster_Calm_01
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Monster
+        ObjectType: 4
+      - ElementName: Play_SFX_Monster_Calm_01
+        ObjectType: 3
+      ID: -521406044
+      Guid: e902a3b5e42bda4194a67e517a8a906e
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Play_SFX_Water_Breach
+      Path: Default Work Unit\Water Breach\Play_SFX_Water_Breach
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Water Breach
+        ObjectType: 4
+      - ElementName: Play_SFX_Water_Breach
+        ObjectType: 3
+      ID: -1496727891
+      Guid: edca341029309142b893430d03829fa9
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Play_SFX_Welder_Take
+      Path: Default Work Unit\Welder\Play_SFX_Welder_Take
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Welder
+        ObjectType: 4
+      - ElementName: Play_SFX_Welder_Take
+        ObjectType: 3
+      ID: 1487639259
+      Guid: d6e6fd0c9d295f45b6ba80008c744b4b
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Play_SFX_Welding
+      Path: Default Work Unit\Welder\Play_SFX_Welding
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Welder
+        ObjectType: 4
+      - ElementName: Play_SFX_Welding
+        ObjectType: 3
+      ID: -571372114
+      Guid: 69f1c96ffed30d49b7e93f9a872f0c0e
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Play_SFX_Welding_Air
+      Path: Default Work Unit\Welder\Play_SFX_Welding_Air
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Welder
+        ObjectType: 4
+      - ElementName: Play_SFX_Welding_Air
+        ObjectType: 3
+      ID: -719501781
+      Guid: 3c8e730e7f15c54ba96bc56d01b34752
       minDuration: 0
       maxDuration: 0
       maxAttenuation: 0
@@ -255,13 +433,68 @@ MonoBehaviour:
       minDuration: 0
       maxDuration: 0
       maxAttenuation: 0
+    - Name: Stop_SFX_Water_Breach
+      Path: Default Work Unit\Water Breach\Stop_SFX_Water_Breach
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Water Breach
+        ObjectType: 4
+      - ElementName: Stop_SFX_Water_Breach
+        ObjectType: 3
+      ID: 350557031
+      Guid: 182153c2bfad174f84629112a4e4198e
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Stop_SFX_Welding
+      Path: Default Work Unit\Welder\Stop_SFX_Welding
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Welder
+        ObjectType: 4
+      - ElementName: Stop_SFX_Welding
+        ObjectType: 3
+      ID: 1302341568
+      Guid: 030d91aec34c65428ae472a9b7f94e44
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Stop_SFX_Welding_Air
+      Path: Default Work Unit\Welder\Stop_SFX_Welding_Air
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Welder
+        ObjectType: 4
+      - ElementName: Stop_SFX_Welding_Air
+        ObjectType: 3
+      ID: 1297865509
+      Guid: 1ec8e2e2d330344b98b5769e0ee5dda6
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{BE61F919-3006-4E78-BCC4-9AD65A681F2F}'
-    m_lastTimePsrt1: 1371001441
-    m_lastTimePart2: -1999264683
+    m_lastTimePsrt1: 1514303811
+    m_lastTimePart2: -1999263033
     List:
+    - Name: Reverb_Monster
+      Path: Default Work Unit\Master Audio Bus\Main_5_1\Reverb_Monster
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: Main_5_1
+        ObjectType: 2
+      - ElementName: Reverb_Monster
+        ObjectType: 1
+      ID: 1049073410
+      Guid: fac4d0ba921f3f4b8b2bd03f399d58af
     - Name: Reverb_Submarine
       Path: Default Work Unit\Master Audio Bus\Main_5_1\Reverb_Submarine
       PathAndIcons:
@@ -279,22 +512,22 @@ MonoBehaviour:
   - PhysicalPath: States\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{06BD8FB5-C89B-48E9-A2F8-37E5DB848B48}'
-    m_lastTimePsrt1: -2145433813
-    m_lastTimePart2: -1999265866
+    m_lastTimePsrt1: 1640435866
+    m_lastTimePart2: -1999265904
     List: []
   SwitchWwu:
   - PhysicalPath: Switches\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{5F0A8AF7-7370-4ABF-A0FE-BF6C072757CA}'
-    m_lastTimePsrt1: -2145499935
-    m_lastTimePart2: -1999265866
+    m_lastTimePsrt1: 1640450914
+    m_lastTimePart2: -1999265904
     List: []
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{25F379C5-DBEC-48AE-BC38-749C8CD1D661}'
-    m_lastTimePsrt1: -2145509385
-    m_lastTimePart2: -1999265866
+    m_lastTimePsrt1: 1640280453
+    m_lastTimePart2: -1999265904
     List:
     - Name: SE_Main_Soundbank
       Path: Default Work Unit\SE_Main_Soundbank
@@ -309,9 +542,18 @@ MonoBehaviour:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{B084DF03-0EE5-43BE-94E9-019A81BD7B92}'
-    m_lastTimePsrt1: -2146444585
-    m_lastTimePart2: -1999265866
+    m_lastTimePsrt1: 1514173460
+    m_lastTimePart2: -1999263033
     List:
+    - Name: RTPC_Breach_Size
+      Path: Default Work Unit\RTPC_Breach_Size
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: RTPC_Breach_Size
+        ObjectType: 13
+      ID: 1522755476
+      Guid: b3ccc436ebde4149ad80bdca793d9801
     - Name: RTPC_Music_Volume
       Path: Default Work Unit\RTPC_Music_Volume
       PathAndIcons:
@@ -333,8 +575,8 @@ MonoBehaviour:
   - PhysicalPath: Game Parameters\Factory SoundSeed Air Game Syncs.wwu
     ParentPhysicalPath: 
     Guid: '{3B167755-FB42-458B-98BF-96F557AFB3B9}'
-    m_lastTimePsrt1: -2146454035
-    m_lastTimePart2: -1999265866
+    m_lastTimePsrt1: 1636600682
+    m_lastTimePart2: -1999265904
     List:
     - Name: SS_Air_Fear
       Path: Factory SoundSeed Air Game Syncs\SS_Air_Fear
@@ -430,21 +672,21 @@ MonoBehaviour:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{F6754639-AD7B-4373-A8A2-778A3681041D}'
-    m_lastTimePsrt1: -2145462153
-    m_lastTimePart2: -1999265866
+    m_lastTimePsrt1: 1640455923
+    m_lastTimePart2: -1999265904
     List: []
   AcousticTextureWwu:
   - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{6AFAD76D-6690-4DEF-A433-1C344145D4C7}'
-    m_lastTimePsrt1: -2145462153
-    m_lastTimePart2: -1999265866
+    m_lastTimePsrt1: 1641989996
+    m_lastTimePart2: -1999265904
     List: []
   - PhysicalPath: Virtual Acoustics\Factory Reflect Acoustic Textures.wwu
     ParentPhysicalPath: 
     Guid: '{463D666B-3CA8-4FA5-8B4A-5FEF12B883F6}'
-    m_lastTimePsrt1: -2145462153
-    m_lastTimePart2: -1999265866
+    m_lastTimePsrt1: 1642305839
+    m_lastTimePart2: -1999265904
     List:
     - Name: Acoustic_Banner
       Path: Factory Reflect Acoustic Textures\Textures\Acoustic_Banner
@@ -600,15 +842,7 @@ MonoBehaviour:
         ObjectType: 15
       ID: 1755085759
       Guid: 8e474652dac50c4ea0dec98d1479529a
-  ExpandedItems:
-  - /Wwise_SkinEcho
-  - /Wwise_SkinEcho/Events
-  - /Wwise_SkinEcho/Events/Default Work Unit
-  - /Wwise_SkinEcho/Events/Default Work Unit/Voices
-  - /Wwise_SkinEcho/Events/Default Work Unit/Voices/Voix_AI
-  - /Wwise_SkinEcho/Events/Default Work Unit/Voices/Voix_Radio
-  - /Wwise_SkinEcho/SoundBanks
-  - /Wwise_SkinEcho/SoundBanks/Default Work Unit
+  ExpandedItems: []
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1
