@@ -51,14 +51,18 @@ public abstract class VibrationSpot : MonoBehaviour {
                 foundController1 = true;
             }
 
-            if (!m_controller1IsVibrating)
+            if(!IsTriggered())
             {
-                m_distanceStartVibratingController1 = distance;
-                m_vibrationDurationController1 -= Time.deltaTime;
-            }
+                if (!m_controller1IsVibrating)
+                {
+                    m_distanceStartVibratingController1 = distance;
+                    m_vibrationDurationController1 -= Time.deltaTime;
+                }
 
-            if (m_controller1IsVibrating || (!m_controller1IsVibrating && m_vibrationDurationController1 <= 0))
-                StartCoroutine(LongVibrationController1());
+                if (m_controller1IsVibrating || (!m_controller1IsVibrating && m_vibrationDurationController1 <= 0))
+                    StartCoroutine(LongVibrationController1());
+            }
+            
         }
 
         if ((distance = GetDistance(m_controllerRight)) <= m_distanceToStartDetect)
@@ -71,15 +75,18 @@ public abstract class VibrationSpot : MonoBehaviour {
                 foundController2 = true;
             }
 
-            if (!m_controller2IsVibrating)
+            if(!IsTriggered())
             {
-                m_distanceStartVibratingController2 = distance;
-                m_vibrationDurationController2 -= Time.deltaTime;
+                if (!m_controller2IsVibrating)
+                {
+                    m_distanceStartVibratingController2 = distance;
+                    m_vibrationDurationController2 -= Time.deltaTime;
+                }
+
+                if (m_controller2IsVibrating || (!m_controller2IsVibrating && m_vibrationDurationController2 <= 0))
+                    StartCoroutine(LongVibrationController2());
             }
-
-            if(m_controller2IsVibrating || (!m_controller2IsVibrating && m_vibrationDurationController2 <= 0))
-                StartCoroutine(LongVibrationController2());
-
+            
         }
         
 
@@ -89,10 +96,14 @@ public abstract class VibrationSpot : MonoBehaviour {
 
     private void OnDrawGizmosSelected()
     {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, m_distanceToStartDetect);
-        Gizmos.color = Color.green;
-        Gizmos.DrawWireSphere(transform.position, m_distanceMaxRumble);
+        if(!IsTriggered())
+        {
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(transform.position, m_distanceToStartDetect);
+            Gizmos.color = Color.green;
+            Gizmos.DrawWireSphere(transform.position, m_distanceMaxRumble);
+        }
+        
     }
 
     private bool IsInArea(float distance)

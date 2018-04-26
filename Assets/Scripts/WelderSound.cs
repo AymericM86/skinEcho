@@ -16,16 +16,64 @@ public class WelderSound : MonoBehaviour
         trackedObj = GetComponent<SteamVR_TrackedObject>();
     }
 
+    int m_spotsInContact = 0;
+
+    public void AddSpot()
+    {
+        m_spotsInContact++;
+    }
+
+    public void RemoveSpot()
+    {
+        Debug.Log("Remove");
+        m_spotsInContact--;
+    }
+
+    private bool InContact()
+    {
+        return m_spotsInContact > 0;
+    }
+
+    bool m_previouslyInContact = false;
+
     // Update is called once per frame
     void Update ()
     {
+        if (!CompareTag("Blowtorch"))
+            return;
+
 		if(Controller.GetHairTriggerDown())
         {
-            AkSoundEngine.PostEvent("Play_SFX_Welder_Air", gameObject);
+            if (!InContact())
+                AkSoundEngine.PostEvent("Play_SFX_Welding_Air", gameObject);
+            else
+                AkSoundEngine.PostEvent("Play_SFX_Welding", gameObject);
+        }
+        else if(Controller.GetHairTrigger())
+        {
+            Debug.Log(m_spotsInContact);
+            if (InContact() != m_previouslyInContact)
+            {
+                if (!InContact())
+                {
+                    AkSoundEngine.PostEvent("Stop_SFX_Welding", gameObject);
+                    AkSoundEngine.PostEvent("Play_SFX_Welding_Air", gameObject);
+                }
+                else
+                {
+                    AkSoundEngine.PostEvent("Stop_SFX_Welding_Air", gameObject);
+                    AkSoundEngine.PostEvent("Play_SFX_Welding", gameObject);
+                }
+            }
         }
         if(Controller.GetHairTriggerUp())
         {
-            AkSoundEngine.PostEvent("Stop_SFX_Welder_Air", gameObject);
+            if (!InContact())
+                AkSoundEngine.PostEvent("Stop_SFX_Welding_Air", gameObject);
+            else
+                AkSoundEngine.PostEvent("Stop_SFX_Welding", gameObject);
         }
+
+        m_previouslyInContact = InContact();
 	}
 }

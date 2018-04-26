@@ -44,9 +44,9 @@ public class Breach : MonoBehaviour
         Vector3 u = m_startBreach.transform.position - c;
         Vector3 v = m_endBreach.transform.position - c;
 
-        if (u.sqrMagnitude != v.sqrMagnitude)
+        if (u.sqrMagnitude - v.sqrMagnitude <= 0.0001f && u.sqrMagnitude - v.sqrMagnitude >= 0)
         {
-            Debug.LogError("Error ! StartBreach and EndBreach must have the same magnitude ! ");
+            Debug.LogError("Error ! StartBreach and EndBreach must have the same magnitude ! (u : "+u.sqrMagnitude+"; v : "+v.sqrMagnitude+")");
             return points;
         }
 
@@ -85,5 +85,45 @@ public class Breach : MonoBehaviour
 
         }
 
+    }
+
+    public bool IsTrigger()
+    {
+        VibrationBreachSpot[] spots = GetComponentsInChildren<VibrationBreachSpot>();
+
+        foreach(VibrationBreachSpot spot in spots)
+        {
+            if (!spot.IsTriggered())
+                return false;
+        }
+        return true;
+    }
+
+    public float GetCompletionPercentage()
+    {
+        float result = 0;
+        VibrationBreachSpot[] spots = GetComponentsInChildren<VibrationBreachSpot>();
+        float valuePerPoint = 100.0f / (float)spots.Length;
+
+        foreach(VibrationBreachSpot spot in spots)
+        {
+            result += spot.GetCompletionLevel() * valuePerPoint;
+        }
+
+        return result;
+    }
+
+    public void NormalizePositions()
+    {
+        m_endBreach.position -= m_room.position;
+        m_startBreach.position -= m_room.position;
+
+        m_endBreach.position = m_endBreach.position.normalized;
+        m_endBreach.position /= 2; 
+        m_startBreach.position = m_startBreach.position.normalized;
+        m_startBreach.position /= 2;
+
+        m_endBreach.position += m_room.position;
+        m_startBreach.position += m_room.position;
     }
 }
