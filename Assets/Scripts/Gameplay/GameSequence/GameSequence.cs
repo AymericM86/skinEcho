@@ -10,9 +10,15 @@ public abstract class GameSequence : MonoBehaviour {
     private bool m_isRunning = false;
     [SerializeField]
     private bool m_isFirstSequence = false;
+    [SerializeField]
+    private bool m_isCheckpoint = false;
+
+    private OxygeneGauge m_gauge;
 
     private void Start()
     {
+        m_gauge = GameObject.FindGameObjectWithTag("Oxygene").GetComponent<OxygeneGauge>();
+
         m_isRunning = m_isFirstSequence;
         if(!m_isRunning)
         {
@@ -37,6 +43,8 @@ public abstract class GameSequence : MonoBehaviour {
         m_isRunning = true;
         gameObject.SetActive(true);
         DoInStart();
+        if (m_isCheckpoint)
+            m_gauge.SetCheckPoint(gameObject);
     }
 
     private void LaunchNextSequence()
@@ -47,7 +55,7 @@ public abstract class GameSequence : MonoBehaviour {
             {
                 m_nextSequence.Launch();
             }
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
     }
 
@@ -61,5 +69,10 @@ public abstract class GameSequence : MonoBehaviour {
     public virtual void DoInStart()
     {
 
+    }
+
+    public GameSequence GetNextSequence()
+    {
+        return m_nextSequence;
     }
 }

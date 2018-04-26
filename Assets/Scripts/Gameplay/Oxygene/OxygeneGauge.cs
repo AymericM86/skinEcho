@@ -37,6 +37,12 @@ public class OxygeneGauge : MonoBehaviour
     [SerializeField]
     float m_oxygeneLevel = 100;
 
+    [SerializeField]
+    float m_oxygeneToAddAfterDeath = 10;
+
+    private GameObject m_checkpoint;
+    private float m_oxygeneAtCheckPoint = 100;
+
     void SetStages()
     {
         foreach (OxygeneStage stage in m_stages)
@@ -62,6 +68,14 @@ public class OxygeneGauge : MonoBehaviour
         if(m_oxygeneLevel <= 0)
         {
             // Todo die
+            m_oxygeneLevel = Mathf.Clamp(m_oxygeneToAddAfterDeath + m_oxygeneAtCheckPoint,0,100);
+            GameSequence sequence = m_checkpoint.GetComponent<GameSequence>();
+            while(sequence != null)
+            {
+                sequence.gameObject.SetActive(false);
+                sequence = sequence.GetNextSequence();
+            }
+            m_checkpoint.SetActive(true);
         }
 
 		foreach(OxygeneStage stage in m_stages)
@@ -80,5 +94,11 @@ public class OxygeneGauge : MonoBehaviour
     public void DecreaseOxygene()
     {
         m_oxygeneLevel -= m_oxygeneToRemove;
+    }
+
+    public void SetCheckPoint(GameObject go)
+    {
+        m_checkpoint = go;
+        m_oxygeneAtCheckPoint = m_oxygeneLevel;
     }
 }
