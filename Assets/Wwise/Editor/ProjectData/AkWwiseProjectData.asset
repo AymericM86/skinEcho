@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{D1B5A9E8-5947-45C1-B2F0-400D504E3082}'
-    m_lastTimePsrt1: 1514163433
-    m_lastTimePart2: -1999263033
+    m_lastTimePsrt1: 393841626
+    m_lastTimePart2: -1999262830
     List:
     - Name: Play_Niveau_Ox_10
       Path: Default Work Unit\Voices\Oxygen Level\Play_Niveau_Ox_10
@@ -479,8 +479,8 @@ MonoBehaviour:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{BE61F919-3006-4E78-BCC4-9AD65A681F2F}'
-    m_lastTimePsrt1: 1514303811
-    m_lastTimePart2: -1999263033
+    m_lastTimePsrt1: 393946903
+    m_lastTimePart2: -1999262830
     List:
     - Name: Reverb_Monster
       Path: Default Work Unit\Master Audio Bus\Main_5_1\Reverb_Monster
@@ -847,9 +847,6 @@ MonoBehaviour:
   - /Wwise_SkinEcho/Events
   - /Wwise_SkinEcho/Events/Default Work Unit
   - /Wwise_SkinEcho/Events/Default Work Unit/Voices
-  - /Wwise_SkinEcho/Events/Default Work Unit/Voices/Voix_AI
-  - /Wwise_SkinEcho/Events/Default Work Unit/Voices/Voix_Radio
-  - /Wwise_SkinEcho/Events/Default Work Unit/Welder
   - /Wwise_SkinEcho/SoundBanks
   - /Wwise_SkinEcho/SoundBanks/Default Work Unit
   m_lastPopulateTimePsrt1: 0
