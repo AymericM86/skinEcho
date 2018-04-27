@@ -4,4 +4,7 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scene/IntegrationContinue/MainScene.unity
+    guid: dd2ba3102c25fd041855a3a02eb581c1
