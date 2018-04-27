@@ -87,7 +87,7 @@ public class Breach : MonoBehaviour
 
     }
 
-    public bool IsTrigger()
+    public bool IsTriggerred()
     {
         VibrationBreachSpot[] spots = GetComponentsInChildren<VibrationBreachSpot>();
 
