@@ -5,7 +5,7 @@ using UnityEngine;
 public class SoundPlayer : GameSequence
 {
     [SerializeField]
-    private string m_eventName;
+    private Wwise_ID_Enum m_eventName;
     private bool m_isTerminated = false;
 
     public override bool IsTerminated()
@@ -19,7 +19,7 @@ public class SoundPlayer : GameSequence
         Rigidbody body = gameObject.AddComponent<Rigidbody>();
         body.isKinematic = true;
         body.useGravity = false;
-        AkSoundEngine.PostEvent(m_eventName, gameObject, (uint)AkCallbackType.AK_EndOfEvent, Terminate, null);
+        AkSoundEngine.PostEvent((uint)m_eventName, gameObject, (uint)AkCallbackType.AK_EndOfEvent, Terminate, null);
 	}
 	
     void Terminate(object in_cookie, AkCallbackType in_type, object in_info)
@@ -28,4 +28,9 @@ public class SoundPlayer : GameSequence
             m_isTerminated = true;
     }
 
+
+    private void OnValidate()
+    {
+        
+    }
 }

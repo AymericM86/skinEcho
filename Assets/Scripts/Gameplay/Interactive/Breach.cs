@@ -43,8 +43,8 @@ public class Breach : MonoBehaviour
         List<Vector3> points = new List<Vector3>();
         Vector3 u = m_startBreach.transform.position - c;
         Vector3 v = m_endBreach.transform.position - c;
-
-        if (u.sqrMagnitude - v.sqrMagnitude <= 0.0001f && u.sqrMagnitude - v.sqrMagnitude >= 0)
+        
+        if (Mathf.Abs(u.sqrMagnitude - v.sqrMagnitude) >= 0.01f)
         {
             Debug.LogError("Error ! StartBreach and EndBreach must have the same magnitude ! (u : "+u.sqrMagnitude+"; v : "+v.sqrMagnitude+")");
             return points;

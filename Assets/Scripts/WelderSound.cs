@@ -42,7 +42,7 @@ public class WelderSound : MonoBehaviour
         if (!CompareTag("Blowtorch"))
             return;
 
-		if(Controller.GetHairTriggerDown())
+        if (Controller.GetHairTriggerDown())
         {
             if (!InContact())
                 AkSoundEngine.PostEvent("Play_SFX_Welding_Air", gameObject);
