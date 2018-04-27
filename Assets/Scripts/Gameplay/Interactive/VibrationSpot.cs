@@ -88,7 +88,6 @@ public abstract class VibrationSpot : MonoBehaviour {
             }
             
         }
-        
 
         InSpot(foundController1, foundController2);
 

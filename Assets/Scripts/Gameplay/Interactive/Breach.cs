@@ -26,6 +26,7 @@ public class Breach : MonoBehaviour
     {
         List<Vector3> points = GetPoints();
 
+        int cpt = 0;
         foreach(Vector3 point in points)
         {
             GameObject spot = Instantiate(m_vibrationSpot);
@@ -33,8 +34,21 @@ public class Breach : MonoBehaviour
             spot.transform.parent = transform;
             VibrationBreachSpot component = spot.GetComponent<VibrationBreachSpot>();
             component.SetControllers(m_controllerLeft,m_controllerRight);
+
+            if (cpt == points.Count / 2)
+            {
+                component.SetSoundSource();
+            
+            }
+            cpt++;
+
         }
 	}
+
+    private void Update()
+    {
+        AkSoundEngine.SetRTPCValue(AK.GAME_PARAMETERS.RTPC_BREACH_SIZE, GetCompletionPercentage());
+    }
 
     List<Vector3> GetPoints()
     {

@@ -12,6 +12,7 @@ public class OxygeneRemover : MonoBehaviour {
 
     VibrationBreachSpot m_spot;
 
+
 	// Use this for initialization
 	void Start ()
     {
