@@ -9,6 +9,8 @@ public class VibrationBreachSpot : VibrationSpot
     Timer m_timerRight = new Timer();
     Timer m_timerLeft = new Timer();
 
+    bool m_isSoundSource = false;
+
     public void Start()
     {
         m_timerLeft.Start(m_timeToLock);
@@ -71,5 +73,29 @@ public class VibrationBreachSpot : VibrationSpot
             return m_timerLeft.GetRatio();
         else
             return m_timerRight.GetRatio();
+    }
+
+    private void OnEnable()
+    {
+        if (m_isSoundSource)
+        {
+            AkSoundEngine.PostEvent("Play_SFX_Water_Breach", gameObject);
+            AkSoundEngine.SetRTPCValue(AK.GAME_PARAMETERS.RTPC_BREACH_SIZE, 100);
+        }
+    }
+
+    private void OnDisable()
+    {
+        if (m_isSoundSource)
+        {
+            AkSoundEngine.PostEvent(AK.EVENTS.STOP_SFX_WATER_BREACH, gameObject);
+            //AkSoundEngine.PostEvent("", gameObject);
+        }
+
+    }
+
+    public void SetSoundSource()
+    {
+        m_isSoundSource = true;
     }
 }
