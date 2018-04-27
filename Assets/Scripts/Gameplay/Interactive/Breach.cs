@@ -47,7 +47,7 @@ public class Breach : MonoBehaviour
 
     private void Update()
     {
-        AkSoundEngine.SetRTPCValue(AK.GAME_PARAMETERS.RTPC_BREACH_SIZE, GetCompletionPercentage());
+        AkSoundEngine.SetRTPCValue(AK.GAME_PARAMETERS.RTPC_BREACH_SIZE, 100.0f - GetCompletionPercentage());
     }
 
     List<Vector3> GetPoints()
