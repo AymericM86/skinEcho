@@ -26,6 +26,7 @@ public abstract class VibrationSpot : MonoBehaviour {
     private bool m_vibrate1 = false;
     private bool m_vibrate2 = false;
     protected bool m_isFound = false;
+    protected bool m_playingSound = false;
     private float m_distanceStartVibratingController1 = 0;
     private float m_distanceStartVibratingController2 = 0;
     private float m_vibrationDurationController1 = 0;
@@ -163,4 +164,25 @@ public abstract class VibrationSpot : MonoBehaviour {
     }
 
     public abstract void InSpot(bool leftHand, bool rightHand);
+
+    protected void Terminate(object in_cookie, AkCallbackType in_type, object in_info)
+    {
+        if (in_type == AkCallbackType.AK_EndOfEvent)
+            m_playingSound = false;
+    }
+
+    protected void TerminateFinalSound(object in_cookie, AkCallbackType in_type, object in_info)
+    {
+        if (in_type == AkCallbackType.AK_EndOfEvent)
+        {
+            m_isFound = true;
+            m_playingSound = false;
+            DoWhenFinalSoundIsOver();
+        }
+    }
+
+    protected virtual void DoWhenFinalSoundIsOver()
+    {
+
+    }
 }
