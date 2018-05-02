@@ -26,8 +26,8 @@ public class VibrationButton : VibrationSpot {
             {
                 // Todo : sound on enter area
 
-                /*AkSoundEngine.PostEvent("Play_SFX_Button_Press", gameObject, (uint)AkCallbackType.AK_EndOfEvent, Terminate, null);
-                m_playingSound = true;*/
+                AkSoundEngine.PostEvent("Play_SFX_Button_Touch", gameObject, (uint)AkCallbackType.AK_EndOfEvent, Terminate, null);
+                m_playingSound = true;
             }
         }
 
@@ -42,8 +42,8 @@ public class VibrationButton : VibrationSpot {
             {
                 // Todo : sound on enter area
 
-                /*AkSoundEngine.PostEvent("Play_SFX_Button_Press", gameObject, (uint)AkCallbackType.AK_EndOfEvent, Terminate, null);
-                m_playingSound = true;*/
+                AkSoundEngine.PostEvent("Play_SFX_Button_Touch", gameObject, (uint)AkCallbackType.AK_EndOfEvent, Terminate, null);
+                m_playingSound = true;
             }
         }
             

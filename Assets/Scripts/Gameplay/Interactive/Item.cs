@@ -15,7 +15,7 @@ public class Item : VibrationSpot
             {
                 if (SteamVR_Controller.Input((int)m_controllerLeft.index).GetHairTrigger())
                 {
-                    AkSoundEngine.PostEvent("Play_SFX_Button_Press", gameObject, (uint)AkCallbackType.AK_EndOfEvent, TerminateFinalSound, null);
+                    AkSoundEngine.PostEvent("Play_SFX_Welder_Take", gameObject, (uint)AkCallbackType.AK_EndOfEvent, TerminateFinalSound, null);
                     m_playingSound = true;
                     
                     m_controllerLeft.gameObject.tag = gameObject.tag;
@@ -24,7 +24,7 @@ public class Item : VibrationSpot
                 {
                     // Todo : sound on enter area
 
-                    /*AkSoundEngine.PostEvent("Play_SFX_Button_Press", gameObject, (uint)AkCallbackType.AK_EndOfEvent, Terminate, null);
+                    /*AkSoundEngine.PostEvent("Play_SFX_Button_Touch", gameObject, (uint)AkCallbackType.AK_EndOfEvent, Terminate, null);
                     m_playingSound = true;*/
                 }
             }
@@ -36,7 +36,7 @@ public class Item : VibrationSpot
             {
                 if (SteamVR_Controller.Input((int)m_controllerRight.index).GetHairTrigger())
                 {
-                    AkSoundEngine.PostEvent("Play_SFX_Button_Press", gameObject, (uint)AkCallbackType.AK_EndOfEvent, TerminateFinalSound, null);
+                    AkSoundEngine.PostEvent("Play_SFX_Welder_Take", gameObject, (uint)AkCallbackType.AK_EndOfEvent, TerminateFinalSound, null);
                     m_playingSound = true;
 
                     m_controllerRight.gameObject.tag = gameObject.tag;
