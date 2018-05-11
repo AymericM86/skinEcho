@@ -32,6 +32,27 @@ public class RescaleRoomWithHand : GameSequence
             m_room.transform.position = new Vector3(headPosition.x, averageControllerPosition.y, headPosition.z);
             m_room.transform.localScale = new Vector3(radius, radius, radius);
             m_terminated = true;
+
+            float angle = Vector3.SignedAngle(m_camera.transform.forward, m_room.transform.forward, Vector3.up);
+            Debug.Log(angle);
+
+            m_room.transform.Rotate(Vector3.up, -angle, Space.Self);
         }
+    }
+
+    private void OnDrawGizmos()
+    {
+        Vector3 pos = transform.position;
+        Vector3 direction = transform.forward;
+        Color color = Color.green;
+        float arrowHeadLength = 0.25f;
+        float arrowHeadAngle = 20;
+
+        Gizmos.color = color;
+        Gizmos.DrawRay(pos, direction);
+        Vector3 right = Quaternion.LookRotation(direction) * Quaternion.Euler(0, 180 + arrowHeadAngle, 0) * new Vector3(0, 0, 1);
+        Vector3 left = Quaternion.LookRotation(direction) * Quaternion.Euler(0, 180 - arrowHeadAngle, 0) * new Vector3(0, 0, 1);
+        Gizmos.DrawRay(pos + direction, right * arrowHeadLength);
+        Gizmos.DrawRay(pos + direction, left * arrowHeadLength);
     }
 }
