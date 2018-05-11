@@ -28,13 +28,16 @@ public class RescaleRoomWithHand : GameSequence
             Vector3 averageControllerPosition = (m_leftController.transform.position + m_rightController.transform.position) / 2;
             Vector3 headPosition = m_camera.transform.position;
 
-            float radius = Vector2.Distance(new Vector2(headPosition.x,headPosition.z), new Vector2(averageControllerPosition.x, averageControllerPosition.z)) * 2;
+            float radius = Vector2.Distance(new Vector2(headPosition.x,headPosition.z), new Vector2(averageControllerPosition.x, averageControllerPosition.z));
+            if (radius < 0.55f)
+                radius = 0.55f;
+            radius *= 2;
+            
             m_room.transform.position = new Vector3(headPosition.x, averageControllerPosition.y, headPosition.z);
             m_room.transform.localScale = new Vector3(radius, radius, radius);
             m_terminated = true;
 
             float angle = Vector3.SignedAngle(m_camera.transform.forward, m_room.transform.forward, Vector3.up);
-            Debug.Log(angle);
 
             m_room.transform.Rotate(Vector3.up, -angle, Space.Self);
         }
@@ -54,5 +57,10 @@ public class RescaleRoomWithHand : GameSequence
         Vector3 left = Quaternion.LookRotation(direction) * Quaternion.Euler(0, 180 - arrowHeadAngle, 0) * new Vector3(0, 0, 1);
         Gizmos.DrawRay(pos + direction, right * arrowHeadLength);
         Gizmos.DrawRay(pos + direction, left * arrowHeadLength);
+    }
+
+    public override void Rearm()
+    {
+        m_terminated = false;
     }
 }
