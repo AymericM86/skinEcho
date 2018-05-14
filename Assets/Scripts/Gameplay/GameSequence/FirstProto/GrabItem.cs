@@ -11,4 +11,9 @@ public class GrabItem : GameSequence {
     {
         return m_item.IsTriggered();
     }
+
+    public override void Rearm()
+    {
+        m_item.Rearm();
+    }
 }

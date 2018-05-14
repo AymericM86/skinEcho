@@ -24,4 +24,10 @@ public class TwoButtons : GameSequence
     {
 
     }
+
+    public override void Rearm()
+    {
+        m_button1.Rearm();
+        m_button2.Rearm();
+    }
 }

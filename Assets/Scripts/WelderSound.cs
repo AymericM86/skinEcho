@@ -25,7 +25,6 @@ public class WelderSound : MonoBehaviour
 
     public void RemoveSpot()
     {
-        Debug.Log("Remove");
         m_spotsInContact--;
     }
 
@@ -51,7 +50,7 @@ public class WelderSound : MonoBehaviour
         }
         else if(Controller.GetHairTrigger())
         {
-            Debug.Log(m_spotsInContact);
+
             if (InContact() != m_previouslyInContact)
             {
                 if (!InContact())

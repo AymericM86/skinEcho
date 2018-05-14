@@ -43,6 +43,9 @@ public class OxygeneGauge : MonoBehaviour
     private GameObject m_checkpoint;
     private float m_oxygeneAtCheckPoint = 100;
 
+    [SerializeField]
+    private Timer m_timeBeforeRespawn;
+
     void SetStages()
     {
         foreach (OxygeneStage stage in m_stages)
@@ -68,14 +71,22 @@ public class OxygeneGauge : MonoBehaviour
         if(m_oxygeneLevel <= 0)
         {
             // Todo die
-            m_oxygeneLevel = Mathf.Clamp(m_oxygeneToAddAfterDeath + m_oxygeneAtCheckPoint,0,100);
-            GameSequence sequence = m_checkpoint.GetComponent<GameSequence>();
-            while(sequence != null)
+            Debug.Log("Dead ! ");
+            m_timeBeforeRespawn.UpdateTimer();
+            if(m_timeBeforeRespawn.IsTimedOut())
             {
-                sequence.gameObject.SetActive(false);
-                sequence = sequence.GetNextSequence();
+                m_oxygeneLevel = Mathf.Clamp(m_oxygeneToAddAfterDeath + m_oxygeneAtCheckPoint, 0, 100);
+                GameSequence sequence = m_checkpoint.GetComponent<GameSequence>();
+                while (sequence != null)
+                {
+                    sequence.Rearm();
+                    sequence.gameObject.SetActive(false);
+                    sequence = sequence.GetNextSequence();
+                }
+                m_checkpoint.SetActive(true);
+                m_timeBeforeRespawn.Restart();
             }
-            m_checkpoint.SetActive(true);
+            
         }
 
 		foreach(OxygeneStage stage in m_stages)
@@ -94,6 +105,8 @@ public class OxygeneGauge : MonoBehaviour
     public void DecreaseOxygene()
     {
         m_oxygeneLevel -= m_oxygeneToRemove;
+        if (m_oxygeneLevel < 0)
+            m_oxygeneLevel = 0;
     }
 
     public void SetCheckPoint(GameObject go)

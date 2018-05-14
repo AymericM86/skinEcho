@@ -33,4 +33,9 @@ public class SoundPlayer : GameSequence
     {
         
     }
+
+    public override void Rearm()
+    {
+        m_isTerminated = false;
+    }
 }

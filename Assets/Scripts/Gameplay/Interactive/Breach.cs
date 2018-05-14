@@ -30,6 +30,7 @@ public class Breach : MonoBehaviour
         foreach(Vector3 point in points)
         {
             GameObject spot = Instantiate(m_vibrationSpot);
+            spot.name = "Breach spot " + cpt;
             spot.transform.position = point;
             spot.transform.parent = transform;
             VibrationBreachSpot component = spot.GetComponent<VibrationBreachSpot>();
@@ -139,5 +140,12 @@ public class Breach : MonoBehaviour
 
         m_endBreach.position += m_room.position;
         m_startBreach.position += m_room.position;
+    }
+
+    public void Rearm()
+    {
+        VibrationBreachSpot[] spots = GetComponentsInChildren<VibrationBreachSpot>();
+        foreach(VibrationBreachSpot spot in spots)
+            spot.Rearm();
     }
 }

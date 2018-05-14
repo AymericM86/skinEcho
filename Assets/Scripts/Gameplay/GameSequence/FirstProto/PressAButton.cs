@@ -11,4 +11,9 @@ public class PressAButton : GameSequence {
     {
         return m_button.IsTriggered();
     }
+
+    public override void Rearm()
+    {
+        m_button.Rearm();
+    }
 }

@@ -19,13 +19,11 @@ public abstract class GameSequence : MonoBehaviour {
     {
         m_gauge = GameObject.FindGameObjectWithTag("Oxygene").GetComponent<OxygeneGauge>();
 
-        m_isRunning = m_isFirstSequence;
-        if(!m_isRunning)
-        {
-            gameObject.SetActive(false);
-        }
-        else
-            DoInStart();
+        m_isRunning = false;
+        
+        gameObject.SetActive(false);
+        if (m_isFirstSequence)
+            Launch();
     }
 
     private void Update()
@@ -74,5 +72,10 @@ public abstract class GameSequence : MonoBehaviour {
     public GameSequence GetNextSequence()
     {
         return m_nextSequence;
+    }
+
+    public virtual void Rearm()
+    {
+        
     }
 }

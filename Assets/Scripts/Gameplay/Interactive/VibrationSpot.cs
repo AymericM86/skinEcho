@@ -60,7 +60,7 @@ public abstract class VibrationSpot : MonoBehaviour {
                     m_vibrationDurationController1 -= Time.deltaTime;
                 }
 
-                if (m_controller1IsVibrating || (!m_controller1IsVibrating && m_vibrationDurationController1 <= 0))
+                if (!m_controllerLeft.CompareTag("Blowtorch") && m_controller1IsVibrating || (!m_controller1IsVibrating && m_vibrationDurationController1 <= 0))
                     StartCoroutine(LongVibrationController1());
             }
             
@@ -84,7 +84,7 @@ public abstract class VibrationSpot : MonoBehaviour {
                     m_vibrationDurationController2 -= Time.deltaTime;
                 }
 
-                if (m_controller2IsVibrating || (!m_controller2IsVibrating && m_vibrationDurationController2 <= 0))
+                if (!m_controllerRight.CompareTag("Blowtorch") && m_controller2IsVibrating || (!m_controller2IsVibrating && m_vibrationDurationController2 <= 0))
                     StartCoroutine(LongVibrationController2());
             }
             
@@ -184,5 +184,10 @@ public abstract class VibrationSpot : MonoBehaviour {
     protected virtual void DoWhenFinalSoundIsOver()
     {
 
+    }
+
+    public virtual void Rearm()
+    {
+        m_isFound = false;
     }
 }

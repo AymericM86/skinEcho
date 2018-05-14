@@ -11,5 +11,8 @@ public class CloseBreach : GameSequence {
         return m_breach.IsTriggerred();
     }
 
-
+    public override void Rearm()
+    {
+        m_breach.Rearm();
+    }
 }

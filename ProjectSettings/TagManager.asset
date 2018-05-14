@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Blowtorch
   - Oxygene
+  - Submarine
   layers:
   - Default
   - TransparentFX
