@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{D1B5A9E8-5947-45C1-B2F0-400D504E3082}'
-    m_lastTimePsrt1: 1706302777
-    m_lastTimePart2: -1999261638
+    m_lastTimePsrt1: 1746602357
+    m_lastTimePart2: -1999258603
     List:
     - Name: Play_Niveau_Ox_10
       Path: Default Work Unit\Voices\Oxygen Level\Play_Niveau_Ox_10
@@ -34,7 +34,7 @@ MonoBehaviour:
       Guid: 28e5fe388ba27346b34cc25b7b118dd6
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 2
+      maxAttenuation: 0
     - Name: Play_Niveau_Ox_15
       Path: Default Work Unit\Voices\Oxygen Level\Play_Niveau_Ox_15
       PathAndIcons:
@@ -50,7 +50,7 @@ MonoBehaviour:
       Guid: e2cd540ce4dd5542aee896a3baef9290
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 2
+      maxAttenuation: 0
     - Name: Play_Niveau_Ox_25
       Path: Default Work Unit\Voices\Oxygen Level\Play_Niveau_Ox_25
       PathAndIcons:
@@ -66,7 +66,7 @@ MonoBehaviour:
       Guid: 8094630029032448b88849b87a7c3352
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 2
+      maxAttenuation: 0
     - Name: Play_Niveau_Ox_5
       Path: Default Work Unit\Voices\Oxygen Level\Play_Niveau_Ox_5
       PathAndIcons:
@@ -82,7 +82,7 @@ MonoBehaviour:
       Guid: 7996bc6d8d064a429fe734a637bc7be4
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 2
+      maxAttenuation: 0
     - Name: Play_Niveau_Ox_50
       Path: Default Work Unit\Voices\Oxygen Level\Play_Niveau_Ox_50
       PathAndIcons:
@@ -98,7 +98,7 @@ MonoBehaviour:
       Guid: a9c7ac6c4857e440bfa562fbf1fbefe2
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 2
+      maxAttenuation: 0
     - Name: Play_Niveau_Ox_75
       Path: Default Work Unit\Voices\Oxygen Level\Play_Niveau_Ox_75
       PathAndIcons:
@@ -114,7 +114,7 @@ MonoBehaviour:
       Guid: 4f040b5c8b97984781529d48bb8df7fd
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 2
+      maxAttenuation: 0
     - Name: Play_Proto_2_Voix_004
       Path: Default Work Unit\Voices\Voix_Radio\Play_Proto_2_Voix_004
       PathAndIcons:
@@ -130,7 +130,7 @@ MonoBehaviour:
       Guid: c1e4cdfdd7329044a34792a5d9d309f4
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 2
+      maxAttenuation: 0
     - Name: Play_Proto_2_Voix_005
       Path: Default Work Unit\Voices\Voix_Radio\Play_Proto_2_Voix_005
       PathAndIcons:
@@ -146,7 +146,7 @@ MonoBehaviour:
       Guid: 992b02b649fff8498538ba286d0dd263
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 2
+      maxAttenuation: 0
     - Name: Play_Proto_2_Voix_006
       Path: Default Work Unit\Voices\Voix_Radio\Play_Proto_2_Voix_006
       PathAndIcons:
@@ -162,7 +162,7 @@ MonoBehaviour:
       Guid: ba1dffbfc620684fa99ca2088ffe840c
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 2
+      maxAttenuation: 0
     - Name: Play_Proto_2_Voix_007
       Path: Default Work Unit\Voices\Voix_Radio\Play_Proto_2_Voix_007
       PathAndIcons:
@@ -178,7 +178,7 @@ MonoBehaviour:
       Guid: 9e03923e336e9e45949bbaef5e1a236e
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 2
+      maxAttenuation: 0
     - Name: Play_Proto_2_Voix_008
       Path: Default Work Unit\Voices\Voix_Radio\Play_Proto_2_Voix_008
       PathAndIcons:
@@ -194,7 +194,7 @@ MonoBehaviour:
       Guid: 45e8c71e9aac804f906f0ff5acd7172c
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 2
+      maxAttenuation: 0
     - Name: Play_Proto_2_Voix_009
       Path: Default Work Unit\Voices\Voix_Radio\Play_Proto_2_Voix_009
       PathAndIcons:
@@ -210,7 +210,7 @@ MonoBehaviour:
       Guid: 5889efaa553d5a45adff1b1ba1326397
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 2
+      maxAttenuation: 0
     - Name: Play_Proto_2_Voix_010
       Path: Default Work Unit\Voices\Voix_Radio\Play_Proto_2_Voix_010
       PathAndIcons:
@@ -226,7 +226,7 @@ MonoBehaviour:
       Guid: beb017ddbb7eb743ba1bf6fd67e05416
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 2
+      maxAttenuation: 0
     - Name: Play_Proto_2_Voix_011
       Path: Default Work Unit\Voices\Voix_Radio\Play_Proto_2_Voix_011
       PathAndIcons:
@@ -242,7 +242,7 @@ MonoBehaviour:
       Guid: 889ce719d0ff9043a1447e4269d9b74a
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 2
+      maxAttenuation: 0
     - Name: Play_Proto_2_Voix_012
       Path: Default Work Unit\Voices\Voix_Radio\Play_Proto_2_Voix_012
       PathAndIcons:
@@ -258,7 +258,7 @@ MonoBehaviour:
       Guid: c1e17702fa3c8e4684ef5a871030d364
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 2
+      maxAttenuation: 0
     - Name: Play_Proto_2_Voix_AI_001
       Path: Default Work Unit\Voices\Voix_AI\Play_Proto_2_Voix_AI_001
       PathAndIcons:
@@ -274,7 +274,7 @@ MonoBehaviour:
       Guid: 89572502f14ecd4a9998cb707eb6e7ef
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 2
+      maxAttenuation: 0
     - Name: Play_Proto_2_Voix_AI_002
       Path: Default Work Unit\Voices\Voix_AI\Play_Proto_2_Voix_AI_002
       PathAndIcons:
@@ -290,7 +290,7 @@ MonoBehaviour:
       Guid: 29d3d5fef7e51f4f86643fd27c90b805
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 2
+      maxAttenuation: 0
     - Name: Play_Proto_2_Voix_AI_003
       Path: Default Work Unit\Voices\Voix_AI\Play_Proto_2_Voix_AI_003
       PathAndIcons:
@@ -306,7 +306,7 @@ MonoBehaviour:
       Guid: a504aa0fe0aa574fbf696c3ce65b677c
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 2
+      maxAttenuation: 0
     - Name: Play_Radio_Voice_Start
       Path: Default Work Unit\Voices\Voix_Radio\Play_Radio_Voice_Start
       PathAndIcons:
@@ -322,7 +322,7 @@ MonoBehaviour:
       Guid: b44ea88714a80d46b8b78e6887f6ecc0
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 2
+      maxAttenuation: 0
     - Name: Play_SFX_Ambiance_01
       Path: Default Work Unit\Play_SFX_Ambiance_01
       PathAndIcons:
@@ -346,7 +346,7 @@ MonoBehaviour:
       Guid: f0870ffd05eaac4eb79983af857bd803
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 2
+      maxAttenuation: 0
     - Name: Play_SFX_Button_Touch
       Path: Default Work Unit\Play_SFX_Button_Touch
       PathAndIcons:
@@ -358,21 +358,61 @@ MonoBehaviour:
       Guid: b6fcbde678fa3a40bc124a7815de068e
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 2
-    - Name: Play_SFX_Monster_Calm_01
-      Path: Default Work Unit\Monster\Play_SFX_Monster_Calm_01
+      maxAttenuation: 0
+    - Name: Play_SFX_Monster_Aggressive
+      Path: Default Work Unit\Monster\Play_SFX_Monster_Aggressive
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
       - ElementName: Monster
         ObjectType: 4
-      - ElementName: Play_SFX_Monster_Calm_01
+      - ElementName: Play_SFX_Monster_Aggressive
         ObjectType: 3
-      ID: -521406044
+      ID: -598763505
+      Guid: d3f0c0b87e97c341b990dad182c2b631
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Play_SFX_Monster_Attack
+      Path: Default Work Unit\Monster\Play_SFX_Monster_Attack
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Monster
+        ObjectType: 4
+      - ElementName: Play_SFX_Monster_Attack
+        ObjectType: 3
+      ID: -1451313037
+      Guid: 0e0d6b16810f6345a499f67c81188eb3
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Play_SFX_Monster_Calm
+      Path: Default Work Unit\Monster\Play_SFX_Monster_Calm
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Monster
+        ObjectType: 4
+      - ElementName: Play_SFX_Monster_Calm
+        ObjectType: 3
+      ID: -725947306
       Guid: e902a3b5e42bda4194a67e517a8a906e
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 2
+      maxAttenuation: 0
+    - Name: Play_SFX_Radar
+      Path: Default Work Unit\Play_SFX_Radar
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_SFX_Radar
+        ObjectType: 3
+      ID: -793408850
+      Guid: 26c9fbf520a9b3439cb71a806ac29b42
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
     - Name: Play_SFX_Water_Breach
       Path: Default Work Unit\Water Breach\Play_SFX_Water_Breach
       PathAndIcons:
@@ -386,7 +426,7 @@ MonoBehaviour:
       Guid: edca341029309142b893430d03829fa9
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 2
+      maxAttenuation: 0
     - Name: Play_SFX_Welder_Take
       Path: Default Work Unit\Welder\Play_SFX_Welder_Take
       PathAndIcons:
@@ -400,7 +440,7 @@ MonoBehaviour:
       Guid: d6e6fd0c9d295f45b6ba80008c744b4b
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 2
+      maxAttenuation: 0
     - Name: Play_SFX_Welding
       Path: Default Work Unit\Welder\Play_SFX_Welding
       PathAndIcons:
@@ -414,7 +454,7 @@ MonoBehaviour:
       Guid: 69f1c96ffed30d49b7e93f9a872f0c0e
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 2
+      maxAttenuation: 0
     - Name: Play_SFX_Welding_Air
       Path: Default Work Unit\Welder\Play_SFX_Welding_Air
       PathAndIcons:
@@ -428,7 +468,7 @@ MonoBehaviour:
       Guid: 3c8e730e7f15c54ba96bc56d01b34752
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 2
+      maxAttenuation: 0
     - Name: Stop_Radio_Voice_Start
       Path: Default Work Unit\Voices\Voix_Radio\Stop_Radio_Voice_Start
       PathAndIcons:
@@ -442,6 +482,46 @@ MonoBehaviour:
         ObjectType: 3
       ID: 1243176019
       Guid: 2b2b68882313bb448044205d675f4dff
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Stop_SFX_Monster_Aggressive
+      Path: Default Work Unit\Monster\Stop_SFX_Monster_Aggressive
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Monster
+        ObjectType: 4
+      - ElementName: Stop_SFX_Monster_Aggressive
+        ObjectType: 3
+      ID: -1973115723
+      Guid: c90fe29f16642341badaf782585257ce
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Stop_SFX_Monster_Calm
+      Path: Default Work Unit\Monster\Stop_SFX_Monster_Calm
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Monster
+        ObjectType: 4
+      - ElementName: Stop_SFX_Monster_Calm
+        ObjectType: 3
+      ID: -328781904
+      Guid: c40a160de69f0b4881a0e607b393d117
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Stop_SFX_Radar
+      Path: Default Work Unit\Stop_SFX_Radar
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Stop_SFX_Radar
+        ObjectType: 3
+      ID: 1615443100
+      Guid: 4f9c96df71fe844699e0719c0e0ecefe
       minDuration: 0
       maxDuration: 0
       maxAttenuation: 0
