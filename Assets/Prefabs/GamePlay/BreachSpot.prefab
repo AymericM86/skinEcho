@@ -68,8 +68,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 341e048001437ee43a9133a169e53abf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_distanceToStartDetect: 0.2
-  m_distanceMaxRumble: 0.15
+  m_distanceToStartDetect: 0.3
+  m_distanceMaxRumble: 0.2
   m_distanceToNearestController: 0
   m_timeBetweenVibrationAtStart: 0.5
   m_minRumbleIntensity: 500
