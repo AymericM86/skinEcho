@@ -634,8 +634,8 @@ MonoBehaviour:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{B084DF03-0EE5-43BE-94E9-019A81BD7B92}'
-    m_lastTimePsrt1: 950961067
-    m_lastTimePart2: -1999261266
+    m_lastTimePsrt1: 1068875933
+    m_lastTimePart2: -1999256997
     List:
     - Name: RTPC_Breach_Size
       Path: Default Work Unit\RTPC_Breach_Size
@@ -664,6 +664,15 @@ MonoBehaviour:
         ObjectType: 13
       ID: 932301089
       Guid: c1b6cf36a9875044bbaaf09a01d37d01
+    - Name: RTPC_Welder_Air
+      Path: Default Work Unit\RTPC_Welder_Air
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: RTPC_Welder_Air
+        ObjectType: 13
+      ID: -490800037
+      Guid: e61a8abc9d282244b76a397689c9f67c
   - PhysicalPath: Game Parameters\Factory SoundSeed Air Game Syncs.wwu
     ParentPhysicalPath: 
     Guid: '{3B167755-FB42-458B-98BF-96F557AFB3B9}'
