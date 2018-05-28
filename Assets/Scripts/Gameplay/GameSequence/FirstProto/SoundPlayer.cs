@@ -5,7 +5,7 @@ using UnityEngine;
 public class SoundPlayer : GameSequence
 {
     [SerializeField]
-    private Wwise_ID_Enum m_eventName;
+    private Wwise_ID_Enum_EVENTS m_eventName;
     private bool m_isTerminated = false;
 
     public override bool IsTerminated()
