@@ -44,23 +44,46 @@ public class Monster : MonoBehaviour
     [SerializeField]
     protected SteamVR_TrackedObject m_controllerRight;
 
+    [Header("Monster rotation")]
+    [SerializeField]
+    float m_calmDistance = 10;
+    [SerializeField]
+    float m_irritatedDistance = 5;
+    [SerializeField]
+    float m_degresPerSecondCalm = 30;
+    [SerializeField]
+    float m_degresPerSecondIrritated = 40;
+
+    float m_anglePosition = 0;
+    Timer m_timeToStayAway;
+
     private void Start()
     {
         AkSoundEngine.PostEvent("Play_SFX_Monster_Calm", gameObject);
         SetCalmTime();
         SetIrritatedTime();
+
+        m_timeToStayAway = new Timer();
     }
 
     // Update is called once per frame
     void Update ()
     {
+        // Distance from the submarine
+        float distance = 0;
+
 		switch(m_state)
         {
             case MonsterState.CALM:
                 DoWhenCalm();
+                m_anglePosition += m_degresPerSecondCalm * Time.deltaTime;
+                distance = Mathf.Lerp(m_irritatedDistance, m_calmDistance, m_timeToStayAway.GetRatio());
+
                 break;
             case MonsterState.IRRITATED:
                 DoWhenIrritated();
+                m_anglePosition += m_degresPerSecondIrritated * Time.deltaTime;
+                distance = Mathf.Lerp(m_calmDistance, m_irritatedDistance, m_timeInvinsible.GetRatio());
                 break;
             case MonsterState.ANGRY:
                 DoWhenAngry();
@@ -68,6 +91,13 @@ public class Monster : MonoBehaviour
             default:
                 break;
         }
+
+        if (m_anglePosition > 360)
+            m_anglePosition -= 360;
+
+        transform.rotation = Quaternion.Euler(0, 0, 0);
+        transform.position = m_submarine.transform.position + new Vector3(0, 0, distance);
+        transform.RotateAround(m_submarine.transform.position, Vector3.up, m_anglePosition);
 	}
 
     private void SetCalmTime()
@@ -98,6 +128,7 @@ public class Monster : MonoBehaviour
     private void DoWhenCalm()
     {
         m_calmTimer.UpdateTimer();
+        m_timeToStayAway.UpdateTimer();
 
         if (m_calmTimer.IsTimedOut())
         {
@@ -119,6 +150,7 @@ public class Monster : MonoBehaviour
 
         if (m_irritatedTimer.IsTimedOut())
         {
+            m_timeToStayAway.Start(m_timeInvinsible.GetTimeToReach());
             m_state = MonsterState.CALM;
 
             if (m_randomChange)

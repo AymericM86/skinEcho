@@ -41,4 +41,9 @@ public class Timer {
     {
         return m_timeElapsed / m_timeToReach;
     }
+
+    public float GetTimeToReach()
+    {
+        return m_timeToReach;
+    }
 }
