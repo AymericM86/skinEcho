@@ -62,8 +62,6 @@ public class Breach : MonoBehaviour
         else
             distance = Vector3.Distance(m_controllerRight.transform.position, m_middleBreach.transform.position);
 
-        print(distance);
-
         AkSoundEngine.SetRTPCValue("RTPC_Welder_Air", Mathf.Lerp(100, 0, distance - minDist / (maxDist - minDist)));
     }
 

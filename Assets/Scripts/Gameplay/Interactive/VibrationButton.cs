@@ -26,7 +26,7 @@ public class VibrationButton : VibrationSpot {
 
         if(!m_playingSound)
         {
-            if (leftHand && SteamVR_Controller.Input((int)m_controllerLeft.index).GetHairTrigger())
+            if (leftHand && SteamVR_Controller.Input((int)m_controllerLeft.index).GetHairTriggerDown())
             {
                 AkSoundEngine.PostEvent("Play_SFX_Button_Press", gameObject, (uint)AkCallbackType.AK_EndOfEvent, TerminateFinalSound, null);
                 m_playingSound = true;
@@ -43,7 +43,7 @@ public class VibrationButton : VibrationSpot {
 
         if(!m_playingSound)
         {
-            if (rightHand && SteamVR_Controller.Input((int)m_controllerRight.index).GetHairTrigger())
+            if (rightHand && SteamVR_Controller.Input((int)m_controllerRight.index).GetHairTriggerDown())
             {
                 AkSoundEngine.PostEvent("Play_SFX_Button_Press", gameObject, (uint)AkCallbackType.AK_EndOfEvent, TerminateFinalSound, null);
                 m_playingSound = true;
