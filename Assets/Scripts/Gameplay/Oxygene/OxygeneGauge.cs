@@ -115,8 +115,10 @@ public class OxygeneGauge : MonoBehaviour
         m_oxygeneAtCheckPoint = m_oxygeneLevel;
     }
 
-    public void Refill()
+    public void Refill(float value)
     {
-        m_oxygeneLevel = 100;
+        m_oxygeneLevel = value;
+        if (m_oxygeneLevel > 100)
+            m_oxygeneLevel = 100;
     }
 }

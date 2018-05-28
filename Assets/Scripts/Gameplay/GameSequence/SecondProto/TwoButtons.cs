@@ -10,6 +10,8 @@ public class TwoButtons : GameSequence
     [SerializeField]
     VibrationButton m_button2;
 
+    [SerializeField]
+    float m_refillValue = 100;
     OxygeneGauge m_oxygene;
 
     bool m_triggered = false;
@@ -24,7 +26,7 @@ public class TwoButtons : GameSequence
         if(m_button1.IsTriggered() && m_button2.IsTriggered())
         {
             m_triggered = true;
-            m_oxygene.Refill();
+            m_oxygene.Refill(m_refillValue);
         }
 
     }
