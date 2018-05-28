@@ -73,4 +73,15 @@ public class RandomVibration : MonoBehaviour
         SetTimer();
         m_controllerRightIsVibrating = false;
     }
+
+    public void Setup(float duration, float minTime, float maxTime)
+    {
+        m_controllerLeftIsVibrating = false;
+        m_controllerRightIsVibrating = false;
+        m_maxTime = maxTime;
+        m_minTime = minTime;
+        m_vibrationDuration = duration;
+
+        SetTimer();
+    }
 }
