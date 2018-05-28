@@ -16,6 +16,7 @@ public class MonsterSetup : GameSequence
 
     public override bool IsTerminated()
     {
+        m_monster.gameObject.SetActive(true);
         m_monster.Setup(m_calmCycle, m_irritatedCycle);
 
         return true;

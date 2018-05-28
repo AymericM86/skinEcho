@@ -20,6 +20,7 @@ public class Breach : MonoBehaviour
     [SerializeField]
     SteamVR_TrackedObject m_controllerRight;
 
+    VibrationBreachSpot m_middleBreach = null;
 
     // Use this for initialization
     void Start ()
@@ -39,6 +40,7 @@ public class Breach : MonoBehaviour
             if (cpt == points.Count / 2)
             {
                 component.SetSoundSource();
+                m_middleBreach = component;
             
             }
             cpt++;
@@ -50,6 +52,19 @@ public class Breach : MonoBehaviour
     {
         
         AkSoundEngine.SetRTPCValue(AK.GAME_PARAMETERS.RTPC_BREACH_SIZE, 100.0f - GetCompletionPercentage());
+
+        float minDist = 0.2f;
+        float maxDist = 0.7f;
+
+        float distance = 0;
+        if (m_controllerLeft.CompareTag("Blowtorch"))
+            distance = Vector3.Distance(m_controllerLeft.transform.position, m_middleBreach.transform.position);
+        else
+            distance = Vector3.Distance(m_controllerRight.transform.position, m_middleBreach.transform.position);
+
+        print(distance);
+
+        AkSoundEngine.SetRTPCValue("RTPC_Welder_Air", Mathf.Lerp(100, 0, distance - minDist / (maxDist - minDist)));
     }
 
     List<Vector3> GetPoints()

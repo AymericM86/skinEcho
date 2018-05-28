@@ -5,7 +5,6 @@ using UnityEngine;
 public enum MonsterState
 {
     CALM,
-    CALM_TO_IRRITATED,
     IRRITATED,
     ANGRY
 }
@@ -31,8 +30,9 @@ public class Monster : MonoBehaviour
     float m_minTimeCalm = 10.0f;
     [SerializeField]
     float m_maxTimeCalm = 15.0f;
-
-    bool m_soundCalmToIrritatedComplete = false;
+    [SerializeField]
+    Timer m_timeInvinsible;
+    
     bool m_soundAngryComplete = false;
 
     [SerializeField]
@@ -44,7 +44,12 @@ public class Monster : MonoBehaviour
     [SerializeField]
     protected SteamVR_TrackedObject m_controllerRight;
 
-
+    private void Start()
+    {
+        AkSoundEngine.PostEvent("Play_SFX_Monster_Calm", gameObject);
+        SetCalmTime();
+        SetIrritatedTime();
+    }
 
     // Update is called once per frame
     void Update ()
@@ -53,9 +58,6 @@ public class Monster : MonoBehaviour
         {
             case MonsterState.CALM:
                 DoWhenCalm();
-                break;
-            case MonsterState.CALM_TO_IRRITATED:
-                DoWhenCalmToIrritated();
                 break;
             case MonsterState.IRRITATED:
                 DoWhenIrritated();
@@ -99,14 +101,15 @@ public class Monster : MonoBehaviour
 
         if (m_calmTimer.IsTimedOut())
         {
-            m_state = MonsterState.CALM_TO_IRRITATED;
+            m_state = MonsterState.IRRITATED;
+
+            m_timeInvinsible.Restart();
 
             if (m_randomChange)
                 SetCalmTime();
 
-            //AkSoundEngine.PostEvent("stopMonsterCalm", gameObject);
-            //AkSoundEngine.PostEvent("startMonsterCalmToIrritated", gameObject, (uint)AkCallbackType.AK_EndOfEvent, TerminateCalmToIrritated, null);
-            m_soundCalmToIrritatedComplete = false;
+            AkSoundEngine.PostEvent("Stop_SFX_Monster_Calm", gameObject);
+            AkSoundEngine.PostEvent("Play_SFX_Monster_Aggressive", gameObject);
         }
     }
 
@@ -121,11 +124,15 @@ public class Monster : MonoBehaviour
             if (m_randomChange)
                 SetIrritatedTime();
 
-            //AkSoundEngine.PostEvent("stopMonsterIrritated", gameObject);
-            //AkSoundEngine.PostEvent("startMonsterCalm", gameObject);
+            AkSoundEngine.PostEvent("Stop_SFX_Monster_Aggressive", gameObject);
+            AkSoundEngine.PostEvent("Play_SFX_Monster_Calm", gameObject);
         }
         else
         {
+            m_timeInvinsible.UpdateTimer();
+            if (!m_timeInvinsible.IsTimedOut())
+                return;
+
             if((m_controllerLeft.CompareTag("Blowtorch") && SteamVR_Controller.Input((int)m_controllerLeft.index).GetHairTrigger())
                 || (m_controllerRight.CompareTag("Blowtorch") && SteamVR_Controller.Input((int)m_controllerRight.index).GetHairTrigger()))
             {
@@ -136,18 +143,9 @@ public class Monster : MonoBehaviour
                 if (m_randomChange)
                     SetIrritatedTime();
 
-                //AkSoundEngine.PostEvent("stopMonsterIrritated", gameObject);
-                //AkSoundEngine.PostEvent("startMonsterAngry", gameObject);
+                AkSoundEngine.PostEvent("Stop_SFX_Monster_Aggressive", gameObject);
+                AkSoundEngine.PostEvent("Play_SFX_Monster_Attack", gameObject, (uint)AkCallbackType.AK_EndOfEvent, TerminateAngry, null);
             }
-        }
-    }
-
-    private void DoWhenCalmToIrritated()
-    {
-        if (m_soundCalmToIrritatedComplete)
-        {
-            m_state = MonsterState.IRRITATED;
-            //AkSoundEngine.PostEvent("startMonsterIrritated", gameObject);
         }
     }
 
@@ -162,16 +160,13 @@ public class Monster : MonoBehaviour
         }
     }
 
-    void TerminateCalmToIrritated(object in_cookie, AkCallbackType in_type, object in_info)
-    {
-        if (in_type == AkCallbackType.AK_EndOfEvent)
-            m_soundCalmToIrritatedComplete = true;
-    }
-
     void TerminateAngry(object in_cookie, AkCallbackType in_type, object in_info)
     {
         if (in_type == AkCallbackType.AK_EndOfEvent)
+        {
             m_soundAngryComplete = true;
+            AkSoundEngine.PostEvent("Play_SFX_Monster_Calm", gameObject);
+        }
     }
 
     public void SetupRandom(float calmMin, float calmMax, float irritatedMin, float irritatedMax)
