@@ -5,7 +5,7 @@ using UnityEngine;
 public class PressAButton : GameSequence {
 
     [SerializeField]
-    private VibrationButton m_button;
+    private VibrationSpot m_button;
 
     public override bool IsTerminated()
     {

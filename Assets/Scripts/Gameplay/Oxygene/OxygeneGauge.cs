@@ -114,4 +114,9 @@ public class OxygeneGauge : MonoBehaviour
         m_checkpoint = go;
         m_oxygeneAtCheckPoint = m_oxygeneLevel;
     }
+
+    public void Refill()
+    {
+        m_oxygeneLevel = 100;
+    }
 }

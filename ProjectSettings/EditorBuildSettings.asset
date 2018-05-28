@@ -5,6 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scene/IntegrationContinue/MainScene.unity
     guid: dd2ba3102c25fd041855a3a02eb581c1
+  - enabled: 1
+    path: Assets/Scene/Playtest/Playtest_ MediumSphere_LargeZone.unity
+    guid: bfea8ec0c8355394bb2e4b5a1ceac7eb

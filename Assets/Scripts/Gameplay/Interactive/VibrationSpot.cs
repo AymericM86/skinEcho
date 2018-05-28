@@ -43,8 +43,12 @@ public abstract class VibrationSpot : MonoBehaviour {
         bool foundController1 = false;
         bool foundController2 = false;
 
+        bool inArea1 = false;
+        bool inArea2 = false;
+
         if ((distance = GetDistance(m_controllerLeft)) <= m_distanceToStartDetect)
         {
+            inArea1 = true;
             m_distanceToNearestController = distance;
 
             if (IsInArea(distance))
@@ -68,6 +72,7 @@ public abstract class VibrationSpot : MonoBehaviour {
 
         if ((distance = GetDistance(m_controllerRight)) <= m_distanceToStartDetect)
         {
+            inArea2 = true;
             if(m_distanceToNearestController > distance)
                 m_distanceToNearestController = distance;
 
@@ -91,7 +96,8 @@ public abstract class VibrationSpot : MonoBehaviour {
         }
 
         InSpot(foundController1, foundController2);
-
+        InArea(inArea1, inArea2);
+            
     }
 
     private void OnDrawGizmosSelected()
@@ -164,6 +170,11 @@ public abstract class VibrationSpot : MonoBehaviour {
     }
 
     public abstract void InSpot(bool leftHand, bool rightHand);
+
+    public virtual void InArea(bool leftHand, bool rightHand)
+    {
+
+    }
 
     protected void Terminate(object in_cookie, AkCallbackType in_type, object in_info)
     {

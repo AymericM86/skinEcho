@@ -1,0 +1,7 @@
+Time to complete :0 Time in area : 0.01214196
+Time to complete :1.697262 Time in area : 3.259148
+Time to complete :0.6140312 Time in area : 2.122211
+Time to complete :6.632076 Time in area : 34.99499
+Time to complete :2.518732 Time in area : 8.812298
+Time to complete :2.17876 Time in area : 7.650614
+Time to complete total :61.29581 Average time in area : 2.954566
