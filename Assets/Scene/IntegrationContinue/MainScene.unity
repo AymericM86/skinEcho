@@ -262,6 +262,50 @@ MonoBehaviour:
     initialListenerList: []
   m_posOffsetData: {fileID: 0}
   listenerMask: 1
+--- !u!1 &28803230
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 28803231}
+  - component: {fileID: 28803232}
+  m_Layer: 0
+  m_Name: Choc monstre
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &28803231
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 28803230}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1171008032}
+  m_RootOrder: 37
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &28803232
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 28803230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 681d154a0ab17e24ea02bbc8c1ce23a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_nextSequence: {fileID: 1897812295}
+  m_isFirstSequence: 0
+  m_isCheckpoint: 0
+  m_eventName: -1451313037
 --- !u!1 &30535545
 GameObject:
   m_ObjectHideFlags: 0
@@ -272,7 +316,7 @@ GameObject:
   - component: {fileID: 30535546}
   - component: {fileID: 30535547}
   m_Layer: 0
-  m_Name: Alive
+  m_Name: Dieu merci t'es vivant
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -472,7 +516,7 @@ GameObject:
   - component: {fileID: 89673109}
   - component: {fileID: 89673110}
   m_Layer: 0
-  m_Name: Light sound
+  m_Name: "Protocole allume le g\xE9n\xE9rateur"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -506,6 +550,50 @@ MonoBehaviour:
   m_isFirstSequence: 0
   m_isCheckpoint: 0
   m_eventName: -1126119414
+--- !u!1 &112813202
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 112813203}
+  - component: {fileID: 112813204}
+  m_Layer: 0
+  m_Name: "Syst\xE8me de s\xE9curit\xE9 3"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &112813203
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 112813202}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1171008032}
+  m_RootOrder: 47
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &112813204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 112813202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 681d154a0ab17e24ea02bbc8c1ce23a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_nextSequence: {fileID: 1180553955}
+  m_isFirstSequence: 0
+  m_isCheckpoint: 0
+  m_eventName: -1159674561
 --- !u!1 &113372393
 GameObject:
   m_ObjectHideFlags: 0
@@ -599,6 +687,50 @@ MonoBehaviour:
   m_button1: {fileID: 718632766}
   m_button2: {fileID: 1107072037}
   m_refillValue: 100
+--- !u!1 &231048234
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 231048236}
+  - component: {fileID: 231048235}
+  m_Layer: 0
+  m_Name: Ca va cogner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &231048235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 231048234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 681d154a0ab17e24ea02bbc8c1ce23a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_nextSequence: {fileID: 28803232}
+  m_isFirstSequence: 0
+  m_isCheckpoint: 0
+  m_eventName: -1159674566
+--- !u!4 &231048236
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 231048234}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1171008032}
+  m_RootOrder: 36
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &242053894
 GameObject:
   m_ObjectHideFlags: 0
@@ -609,7 +741,7 @@ GameObject:
   - component: {fileID: 242053895}
   - component: {fileID: 242053896}
   m_Layer: 0
-  m_Name: Alive (4)
+  m_Name: "V\xE9rificatyion omnitool"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -639,13 +771,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 681d154a0ab17e24ea02bbc8c1ce23a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_nextSequence: {fileID: 0}
+  m_nextSequence: {fileID: 1456829498}
   m_isFirstSequence: 0
   m_isCheckpoint: 0
   m_eventName: -1126119417
 --- !u!1 &259854742 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 155680, guid: 4d293c8e162f3874b982baadd71153d2, type: 2}
+  m_PrefabInternal: {fileID: 708457142}
+--- !u!4 &259854743 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 408470, guid: 4d293c8e162f3874b982baadd71153d2, type: 2}
   m_PrefabInternal: {fileID: 708457142}
 --- !u!114 &259854744
 MonoBehaviour:
@@ -750,136 +886,6 @@ Transform:
   m_Father: {fileID: 41703982}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!43 &292806418
-Mesh:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_Name: 
-  serializedVersion: 8
-  m_SubMeshes:
-  - serializedVersion: 2
-    firstByte: 0
-    indexCount: 24
-    topology: 0
-    baseVertex: 0
-    firstVertex: 0
-    vertexCount: 8
-    localAABB:
-      m_Center: {x: 0, y: 0.01, z: 0}
-      m_Extent: {x: 1.65, y: 0, z: 1.275}
-  m_Shapes:
-    vertices: []
-    shapes: []
-    channels: []
-    fullWeights: []
-  m_BindPose: []
-  m_BoneNameHashes: 
-  m_RootBoneNameHash: 0
-  m_MeshCompression: 0
-  m_IsReadable: 1
-  m_KeepVertices: 1
-  m_KeepIndices: 1
-  m_IndexFormat: 0
-  m_IndexBuffer: 000004000100010004000500010005000200020005000600020006000300030006000700030007000000000007000400
-  m_Skin: []
-  m_VertexData:
-    m_CurrentChannels: 13
-    m_VertexCount: 8
-    m_Channels:
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 3
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 12
-      format: 0
-      dimension: 4
-    - stream: 0
-      offset: 28
-      format: 0
-      dimension: 2
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    - stream: 0
-      offset: 0
-      format: 0
-      dimension: 0
-    m_DataSize: 288
-    _typelessdata: 0000c03f0ad7233c000090bf000000000000803f0000803f0000803f00000000000000000000c0bf0ad7233c000090bf000000000000803f0000803f0000803f0000803f000000000000c0bf0ad7233c0000903f000000000000803f0000803f0000803f00000000000000000000c03f0ad7233c0000903f000000000000803f0000803f0000803f0000803f000000003333d33f0ad7233c3333a3bf000000000000803f0000803f00000000000000000000803f3333d3bf0ad7233c3333a3bf000000000000803f0000803f000000000000803f0000803f3333d3bf0ad7233c3333a33f000000000000803f0000803f00000000000000000000803f3333d33f0ad7233c3333a33f000000000000803f0000803f000000000000803f0000803f
-  m_CompressedMesh:
-    m_Vertices:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UV:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Normals:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Tangents:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Weights:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_NormalSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_TangentSigns:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_FloatColors:
-      m_NumItems: 0
-      m_Range: 0
-      m_Start: 0
-      m_Data: 
-      m_BitSize: 0
-    m_BoneIndices:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_Triangles:
-      m_NumItems: 0
-      m_Data: 
-      m_BitSize: 0
-    m_UVInfo: 0
-  m_LocalAABB:
-    m_Center: {x: 0, y: 0.01, z: 0}
-    m_Extent: {x: 1.65, y: 0, z: 1.275}
-  m_MeshUsageFlags: 0
-  m_BakedConvexCollisionMesh: 
-  m_BakedTriangleCollisionMesh: 
-  m_MeshOptimized: 0
 --- !u!1 &303055352
 GameObject:
   m_ObjectHideFlags: 0
@@ -890,7 +896,7 @@ GameObject:
   - component: {fileID: 303055353}
   - component: {fileID: 303055354}
   m_Layer: 0
-  m_Name: Light sound (1)
+  m_Name: Dialogue final
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -907,7 +913,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1171008032}
-  m_RootOrder: 45
+  m_RootOrder: 55
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &303055354
 MonoBehaviour:
@@ -923,7 +929,7 @@ MonoBehaviour:
   m_nextSequence: {fileID: 0}
   m_isFirstSequence: 0
   m_isCheckpoint: 0
-  m_eventName: -443270404
+  m_eventName: -1142896980
 --- !u!1001 &357925762
 Prefab:
   m_ObjectHideFlags: 0
@@ -1009,7 +1015,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1171008032}
-  m_RootOrder: 41
+  m_RootOrder: 51
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &395790821
 MonoBehaviour:
@@ -1114,7 +1120,7 @@ GameObject:
   - component: {fileID: 504120924}
   - component: {fileID: 504120925}
   m_Layer: 0
-  m_Name: Wake Up Sound (2)
+  m_Name: Bouge fais qqchose
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1158,7 +1164,7 @@ GameObject:
   - component: {fileID: 516446121}
   - component: {fileID: 516446122}
   m_Layer: 0
-  m_Name: Close breach success sound 2
+  m_Name: Tas de ferraille
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1242,6 +1248,50 @@ MonoBehaviour:
     type: 2}
   m_controllerLeft: {fileID: 368099953}
   m_controllerRight: {fileID: 678361820}
+--- !u!1 &548552362
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 548552363}
+  - component: {fileID: 548552364}
+  m_Layer: 0
+  m_Name: "Syst\xE8me de s\xE9curit\xE9 2"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &548552363
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 548552362}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1171008032}
+  m_RootOrder: 32
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &548552364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 548552362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 681d154a0ab17e24ea02bbc8c1ce23a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_nextSequence: {fileID: 1765613244}
+  m_isFirstSequence: 0
+  m_isCheckpoint: 0
+  m_eventName: -1159674561
 --- !u!1 &590401145
 GameObject:
   m_ObjectHideFlags: 0
@@ -1252,7 +1302,7 @@ GameObject:
   - component: {fileID: 590401146}
   - component: {fileID: 590401147}
   m_Layer: 0
-  m_Name: Close breach success sound 1
+  m_Name: "Active syst\xE8me s\xE9curit\xE9"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1314,7 +1364,7 @@ Transform:
   m_Children:
   - {fileID: 41703982}
   m_Father: {fileID: 1171008032}
-  m_RootOrder: 42
+  m_RootOrder: 52
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &615627956
 MonoBehaviour:
@@ -1341,7 +1391,7 @@ GameObject:
   - component: {fileID: 626734288}
   - component: {fileID: 626734289}
   m_Layer: 0
-  m_Name: Wake up exercice success sound
+  m_Name: "Signal re\xE7u"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1619,12 +1669,13 @@ Prefab:
     - target: {fileID: 2348914, guid: 4d293c8e162f3874b982baadd71153d2, type: 2}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 1540313047}
+      objectReference: {fileID: 1665951158}
     - target: {fileID: 3380982, guid: 4d293c8e162f3874b982baadd71153d2, type: 2}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 292806418}
-    m_RemovedComponents: []
+      objectReference: {fileID: 1374216289}
+    m_RemovedComponents:
+    - {fileID: 114143491474116208, guid: 4d293c8e162f3874b982baadd71153d2, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 4d293c8e162f3874b982baadd71153d2, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &718632764
@@ -1675,6 +1726,54 @@ MonoBehaviour:
   m_maxRumbleIntensity: 3500
   m_controllerLeft: {fileID: 368099953}
   m_controllerRight: {fileID: 678361820}
+--- !u!1 &732870519
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 732870520}
+  - component: {fileID: 732870521}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &732870520
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 732870519}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.5, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1180553954}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &732870521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 732870519}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3eaac5aabc74d7843b22fd2c644bf354, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_distanceToStartDetect: 0.3
+  m_distanceMaxRumble: 0.2
+  m_distanceToNearestController: 0
+  m_timeBetweenVibrationAtStart: 0.5
+  m_minRumbleIntensity: 500
+  m_maxRumbleIntensity: 3500
+  m_controllerLeft: {fileID: 368099953}
+  m_controllerRight: {fileID: 678361820}
 --- !u!1 &759260509
 GameObject:
   m_ObjectHideFlags: 0
@@ -1702,7 +1801,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1171008032}
-  m_RootOrder: 43
+  m_RootOrder: 53
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &759260511
 MonoBehaviour:
@@ -1719,6 +1818,50 @@ MonoBehaviour:
   m_isFirstSequence: 0
   m_isCheckpoint: 0
   m_eventName: -460048128
+--- !u!1 &802508487
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 802508488}
+  - component: {fileID: 802508489}
+  m_Layer: 0
+  m_Name: "Ouvert nouvelle br\xE8che"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &802508488
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 802508487}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1171008032}
+  m_RootOrder: 39
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &802508489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 802508487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 681d154a0ab17e24ea02bbc8c1ce23a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_nextSequence: {fileID: 1354688733}
+  m_isFirstSequence: 0
+  m_isCheckpoint: 0
+  m_eventName: -1159674572
 --- !u!1 &851949919
 GameObject:
   m_ObjectHideFlags: 0
@@ -1747,7 +1890,7 @@ Transform:
   m_Children:
   - {fileID: 523379468}
   m_Father: {fileID: 1171008032}
-  m_RootOrder: 40
+  m_RootOrder: 50
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &851949921
 MonoBehaviour:
@@ -1802,7 +1945,7 @@ GameObject:
   - component: {fileID: 856517628}
   - component: {fileID: 856517629}
   m_Layer: 0
-  m_Name: Wake Up Sound (1)
+  m_Name: "R\xE9veille toi"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1886,6 +2029,50 @@ MonoBehaviour:
     type: 2}
   m_controllerLeft: {fileID: 368099953}
   m_controllerRight: {fileID: 678361820}
+--- !u!1 &882703767
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 882703769}
+  - component: {fileID: 882703768}
+  m_Layer: 0
+  m_Name: Un truc te fonce dessus
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &882703768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 882703767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 681d154a0ab17e24ea02bbc8c1ce23a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_nextSequence: {fileID: 231048235}
+  m_isFirstSequence: 0
+  m_isCheckpoint: 0
+  m_eventName: -1159674567
+--- !u!4 &882703769
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 882703767}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1171008032}
+  m_RootOrder: 35
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &888310314
 GameObject:
   m_ObjectHideFlags: 0
@@ -1986,6 +2173,53 @@ Transform:
   m_Father: {fileID: 41703982}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &921114195
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 921114196}
+  - component: {fileID: 921114197}
+  m_Layer: 0
+  m_Name: Activate vibration random
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &921114196
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 921114195}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.61}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1171008032}
+  m_RootOrder: 49
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &921114197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 921114195}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7d8acf87c6a85849b9dd7f9d1be8d7d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_nextSequence: {fileID: 851949921}
+  m_isFirstSequence: 0
+  m_isCheckpoint: 0
+  m_randomVibration: {fileID: 1264487920}
+  m_vibrationDuration: 2
+  m_minTimeBeforeVibration: 4
+  m_maxTimeBeforeVibration: 10
 --- !u!1 &938183117
 GameObject:
   m_ObjectHideFlags: 0
@@ -1996,7 +2230,7 @@ GameObject:
   - component: {fileID: 938183118}
   - component: {fileID: 938183119}
   m_Layer: 0
-  m_Name: Alive (1)
+  m_Name: "Objet non identifi\xE9 boom"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2040,7 +2274,7 @@ GameObject:
   - component: {fileID: 945482229}
   - component: {fileID: 945482230}
   m_Layer: 0
-  m_Name: Wake Up Sound
+  m_Name: Plongeur 105 tu m'entends
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2071,7 +2305,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_nextSequence: {fileID: 856517629}
-  m_isFirstSequence: 0
+  m_isFirstSequence: 1
   m_isCheckpoint: 0
   m_eventName: -1193229865
 --- !u!1 &946798647
@@ -2084,7 +2318,7 @@ GameObject:
   - component: {fileID: 946798648}
   - component: {fileID: 946798649}
   m_Layer: 0
-  m_Name: Alive (3)
+  m_Name: "Syst\xE8me d'\xE9mission cass\xE9"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2562,6 +2796,14 @@ Transform:
   - {fileID: 516446121}
   - {fileID: 1297152882}
   - {fileID: 1935563137}
+  - {fileID: 548552363}
+  - {fileID: 1765613243}
+  - {fileID: 1279623606}
+  - {fileID: 882703769}
+  - {fileID: 231048236}
+  - {fileID: 28803231}
+  - {fileID: 1897812294}
+  - {fileID: 802508488}
   - {fileID: 1354688732}
   - {fileID: 1500835698}
   - {fileID: 1297019442}
@@ -2569,7 +2811,9 @@ Transform:
   - {fileID: 1782620927}
   - {fileID: 1932841830}
   - {fileID: 1916905797}
-  - {fileID: 1765613243}
+  - {fileID: 112813203}
+  - {fileID: 1180553954}
+  - {fileID: 921114196}
   - {fileID: 851949920}
   - {fileID: 395790820}
   - {fileID: 615627955}
@@ -2579,6 +2823,54 @@ Transform:
   m_Father: {fileID: 2082472183}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1180553953
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1180553954}
+  - component: {fileID: 1180553955}
+  m_Layer: 0
+  m_Name: TwoButton 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1180553954
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1180553953}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 732870520}
+  - {fileID: 2038040558}
+  m_Father: {fileID: 1171008032}
+  m_RootOrder: 48
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1180553955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1180553953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e58719d290da2db4cb07ac1b195ad4d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_nextSequence: {fileID: 921114197}
+  m_isFirstSequence: 0
+  m_isCheckpoint: 0
+  m_button1: {fileID: 732870521}
+  m_button2: {fileID: 2038040559}
+  m_refillValue: 100
 --- !u!1 &1227785426
 GameObject:
   m_ObjectHideFlags: 0
@@ -2617,7 +2909,7 @@ GameObject:
   - component: {fileID: 1257736004}
   - component: {fileID: 1257736005}
   m_Layer: 0
-  m_Name: Wake Up Sound (3)
+  m_Name: Un signe de vie
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2651,6 +2943,84 @@ MonoBehaviour:
   m_isFirstSequence: 0
   m_isCheckpoint: 0
   m_eventName: -1193229870
+--- !u!1 &1264487915 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 189822, guid: 4d293c8e162f3874b982baadd71153d2, type: 2}
+  m_PrefabInternal: {fileID: 708457142}
+--- !u!114 &1264487917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1264487915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bca9ccf900ccc84c887d783321d27e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _head: {fileID: 259854743}
+  _ears: {fileID: 1390171639}
+  wireframe: 0
+--- !u!114 &1264487920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1264487915}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c5efe44ec129ae4e9244a31994a3a39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_leftController: {fileID: 368099953}
+  m_rightController: {fileID: 678361820}
+  m_vibrationDuration: 2
+  m_minTime: 4
+  m_maxTime: 10
+--- !u!1 &1279623604
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1279623606}
+  - component: {fileID: 1279623605}
+  m_Layer: 0
+  m_Name: La coque devrait tenir le coup
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1279623605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1279623604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 681d154a0ab17e24ea02bbc8c1ce23a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_nextSequence: {fileID: 882703768}
+  m_isFirstSequence: 0
+  m_isCheckpoint: 0
+  m_eventName: -1159674568
+--- !u!4 &1279623606
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1279623604}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1171008032}
+  m_RootOrder: 34
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1297019441
 GameObject:
   m_ObjectHideFlags: 0
@@ -2661,7 +3031,7 @@ GameObject:
   - component: {fileID: 1297019442}
   - component: {fileID: 1297019443}
   m_Layer: 0
-  m_Name: Close breach success sound 4
+  m_Name: Hallu ado ?
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2678,7 +3048,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1171008032}
-  m_RootOrder: 34
+  m_RootOrder: 42
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1297019443
 MonoBehaviour:
@@ -2694,7 +3064,7 @@ MonoBehaviour:
   m_nextSequence: {fileID: 1888685886}
   m_isFirstSequence: 0
   m_isCheckpoint: 0
-  m_eventName: -460048128
+  m_eventName: -1226785040
 --- !u!1 &1297152881
 GameObject:
   m_ObjectHideFlags: 0
@@ -2750,7 +3120,7 @@ GameObject:
   - component: {fileID: 1309906963}
   - component: {fileID: 1309906964}
   m_Layer: 0
-  m_Name: GrabBlowtorchSuccessSound
+  m_Name: Utilise omnitool le long de la faille
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2873,7 +3243,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1171008032}
-  m_RootOrder: 32
+  m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1354688733
 MonoBehaviour:
@@ -2922,12 +3292,146 @@ Transform:
   m_Father: {fileID: 438663725}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!43 &1374216289
+Mesh:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: 
+  serializedVersion: 8
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 24
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 8
+    localAABB:
+      m_Center: {x: 0, y: 0.01, z: 0}
+      m_Extent: {x: 1.65, y: 0, z: 1.275}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 000004000100010004000500010005000200020005000600020006000300030006000700030007000000000007000400
+  m_Skin: []
+  m_VertexData:
+    m_CurrentChannels: 13
+    m_VertexCount: 8
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 4
+    - stream: 0
+      offset: 28
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 288
+    _typelessdata: 0000c03f0ad7233c000090bf000000000000803f0000803f0000803f00000000000000000000c0bf0ad7233c000090bf000000000000803f0000803f0000803f0000803f000000000000c0bf0ad7233c0000903f000000000000803f0000803f0000803f00000000000000000000c03f0ad7233c0000903f000000000000803f0000803f0000803f0000803f000000003333d33f0ad7233c3333a3bf000000000000803f0000803f00000000000000000000803f3333d3bf0ad7233c3333a3bf000000000000803f0000803f000000000000803f0000803f3333d3bf0ad7233c3333a33f000000000000803f0000803f00000000000000000000803f3333d33f0ad7233c3333a33f000000000000803f0000803f000000000000803f0000803f
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: 0.01, z: 0}
+    m_Extent: {x: 1.65, y: 0, z: 1.275}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshOptimized: 0
 --- !u!114 &1375322700 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 11470538, guid: 4d293c8e162f3874b982baadd71153d2,
     type: 2}
   m_PrefabInternal: {fileID: 708457142}
   m_Script: {fileID: 11500000, guid: d37c2cf88f7c59f4c8cf5d3812568143, type: 3}
+--- !u!4 &1390171639 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 439042, guid: 4d293c8e162f3874b982baadd71153d2, type: 2}
+  m_PrefabInternal: {fileID: 708457142}
 --- !u!1 &1399172113
 GameObject:
   m_ObjectHideFlags: 0
@@ -2938,7 +3442,7 @@ GameObject:
   - component: {fileID: 1399172115}
   - component: {fileID: 1399172114}
   m_Layer: 0
-  m_Name: Two buttons success sound
+  m_Name: "Autre br\xE8che"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2955,7 +3459,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 681d154a0ab17e24ea02bbc8c1ce23a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_nextSequence: {fileID: 194277143}
+  m_nextSequence: {fileID: 113372395}
   m_isFirstSequence: 0
   m_isCheckpoint: 0
   m_eventName: -1109341710
@@ -3032,7 +3536,7 @@ GameObject:
   - component: {fileID: 1423464664}
   - component: {fileID: 1423464665}
   m_Layer: 0
-  m_Name: Blowtorch sound (2)
+  m_Name: "Br\xE8che et cours d'oxyg\xE8ne"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3228,7 +3732,7 @@ GameObject:
   - component: {fileID: 1456829497}
   - component: {fileID: 1456829498}
   m_Layer: 0
-  m_Name: Wake up exercice sound
+  m_Name: Tend les bras et appuie gachettes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3318,7 +3822,7 @@ Transform:
   m_Children:
   - {fileID: 72635654}
   m_Father: {fileID: 1171008032}
-  m_RootOrder: 44
+  m_RootOrder: 54
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1489868138
 MonoBehaviour:
@@ -3363,7 +3867,7 @@ Transform:
   m_Children:
   - {fileID: 438663725}
   m_Father: {fileID: 1171008032}
-  m_RootOrder: 33
+  m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1500835699
 MonoBehaviour:
@@ -3435,7 +3939,7 @@ GameObject:
   - component: {fileID: 1535220298}
   - component: {fileID: 1535220299}
   m_Layer: 0
-  m_Name: Light success sound
+  m_Name: Y a plus rien qui marche
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3469,7 +3973,7 @@ MonoBehaviour:
   m_isFirstSequence: 0
   m_isCheckpoint: 0
   m_eventName: -1126119413
---- !u!21 &1540313047
+--- !u!21 &1665951158
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
@@ -3562,7 +4066,7 @@ GameObject:
   - component: {fileID: 1676804598}
   - component: {fileID: 1676804599}
   m_Layer: 0
-  m_Name: Blowtorch sound
+  m_Name: Continue dans le noir
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3654,7 +4158,7 @@ GameObject:
   - component: {fileID: 1724121771}
   - component: {fileID: 1724121772}
   m_Layer: 0
-  m_Name: Blowtorch sound (1)
+  m_Name: Bon ce qu'on va faire c'est que
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3717,7 +4221,7 @@ Transform:
   - {fileID: 1703451935}
   - {fileID: 952787210}
   m_Father: {fileID: 1171008032}
-  m_RootOrder: 39
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1765613244
 MonoBehaviour:
@@ -3730,7 +4234,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e58719d290da2db4cb07ac1b195ad4d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_nextSequence: {fileID: 851949921}
+  m_nextSequence: {fileID: 1279623605}
   m_isFirstSequence: 0
   m_isCheckpoint: 0
   m_button1: {fileID: 1703451936}
@@ -3746,7 +4250,7 @@ GameObject:
   - component: {fileID: 1780500154}
   - component: {fileID: 1780500155}
   m_Layer: 0
-  m_Name: Blowtorch success sound (1)
+  m_Name: Trappe en hauteur
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3790,7 +4294,7 @@ GameObject:
   - component: {fileID: 1782620927}
   - component: {fileID: 1782620928}
   m_Layer: 0
-  m_Name: Close breach success sound 5
+  m_Name: Hallu ado ?
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3807,7 +4311,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1171008032}
-  m_RootOrder: 36
+  m_RootOrder: 44
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1782620928
 MonoBehaviour:
@@ -3820,10 +4324,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 681d154a0ab17e24ea02bbc8c1ce23a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_nextSequence: {fileID: 1765613244}
+  m_nextSequence: {fileID: 1932841831}
   m_isFirstSequence: 0
   m_isCheckpoint: 0
-  m_eventName: -460048128
+  m_eventName: -1226785039
 --- !u!1 &1836791965
 GameObject:
   m_ObjectHideFlags: 0
@@ -3834,7 +4338,7 @@ GameObject:
   - component: {fileID: 1836791966}
   - component: {fileID: 1836791967}
   m_Layer: 0
-  m_Name: Alive (2)
+  m_Name: Ton sous-marin en a pris un coup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3878,7 +4382,7 @@ GameObject:
   - component: {fileID: 1853789510}
   - component: {fileID: 1853789511}
   m_Layer: 0
-  m_Name: Blowtorch sound (3)
+  m_Name: Module de soudure dans trappe d'urgence
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3990,7 +4494,7 @@ Transform:
   m_Children:
   - {fileID: 1666691911}
   m_Father: {fileID: 1171008032}
-  m_RootOrder: 35
+  m_RootOrder: 43
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1888685886
 MonoBehaviour:
@@ -4007,6 +4511,50 @@ MonoBehaviour:
   m_isFirstSequence: 0
   m_isCheckpoint: 0
   m_breach: {fileID: 1666691912}
+--- !u!1 &1897812293
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1897812294}
+  - component: {fileID: 1897812295}
+  m_Layer: 0
+  m_Name: "C'\xE9tait quoi \xE7a"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1897812294
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1897812293}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1171008032}
+  m_RootOrder: 38
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1897812295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1897812293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 681d154a0ab17e24ea02bbc8c1ce23a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_nextSequence: {fileID: 802508489}
+  m_isFirstSequence: 0
+  m_isCheckpoint: 0
+  m_eventName: -1159674565
 --- !u!1 &1916905796
 GameObject:
   m_ObjectHideFlags: 0
@@ -4017,7 +4565,7 @@ GameObject:
   - component: {fileID: 1916905797}
   - component: {fileID: 1916905798}
   m_Layer: 0
-  m_Name: Close breach success sound 6
+  m_Name: Taux d'azote qui grimpe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4034,7 +4582,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1171008032}
-  m_RootOrder: 38
+  m_RootOrder: 46
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1916905798
 MonoBehaviour:
@@ -4047,10 +4595,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 681d154a0ab17e24ea02bbc8c1ce23a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_nextSequence: {fileID: 1765613244}
+  m_nextSequence: {fileID: 112813204}
   m_isFirstSequence: 0
   m_isCheckpoint: 0
-  m_eventName: -460048128
+  m_eventName: -1142896978
 --- !u!1 &1932841829
 GameObject:
   m_ObjectHideFlags: 0
@@ -4079,7 +4627,7 @@ Transform:
   m_Children:
   - {fileID: 1412676297}
   m_Father: {fileID: 1171008032}
-  m_RootOrder: 37
+  m_RootOrder: 45
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1932841831
 MonoBehaviour:
@@ -4106,7 +4654,7 @@ GameObject:
   - component: {fileID: 1935563137}
   - component: {fileID: 1935563138}
   m_Layer: 0
-  m_Name: Close breach success sound 3
+  m_Name: Tu t'en sors bien
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4136,10 +4684,58 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 681d154a0ab17e24ea02bbc8c1ce23a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_nextSequence: {fileID: 194277143}
-  m_isFirstSequence: 1
+  m_nextSequence: {fileID: 548552364}
+  m_isFirstSequence: 0
   m_isCheckpoint: 0
   m_eventName: -1159674562
+--- !u!1 &2038040557
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2038040558}
+  - component: {fileID: 2038040559}
+  m_Layer: 0
+  m_Name: GameObject (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2038040558
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2038040557}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.5, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1180553954}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2038040559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2038040557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3eaac5aabc74d7843b22fd2c644bf354, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_distanceToStartDetect: 0.3
+  m_distanceMaxRumble: 0.2
+  m_distanceToNearestController: 0
+  m_timeBetweenVibrationAtStart: 0.5
+  m_minRumbleIntensity: 500
+  m_maxRumbleIntensity: 3500
+  m_controllerLeft: {fileID: 368099953}
+  m_controllerRight: {fileID: 678361820}
 --- !u!1 &2082472180
 GameObject:
   m_ObjectHideFlags: 0
@@ -4164,7 +4760,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2082472180}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
