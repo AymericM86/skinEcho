@@ -1685,7 +1685,6 @@ MonoBehaviour:
       Guid: 8e474652dac50c4ea0dec98d1479529a
   ExpandedItems:
   - /Wwise_SkinEcho
-  - /Wwise_SkinEcho/Events
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1
