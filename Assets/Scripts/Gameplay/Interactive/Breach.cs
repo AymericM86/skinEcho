@@ -39,13 +39,15 @@ public class Breach : MonoBehaviour
 
             if (cpt == points.Count / 2)
             {
-                component.SetSoundSource();
                 m_middleBreach = component;
-            
             }
             cpt++;
 
         }
+
+        if (!m_middleBreach.gameObject.GetComponent<Rigidbody>())
+            m_middleBreach.gameObject.AddComponent<Rigidbody>();
+        AkSoundEngine.PostEvent(AK.EVENTS.PLAY_SFX_WATER_BREACH, m_middleBreach.gameObject);
 	}
 
     private void Update()
