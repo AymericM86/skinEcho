@@ -47,7 +47,6 @@ public class Breach : MonoBehaviour
 
         if (!m_middleBreach.gameObject.GetComponent<Rigidbody>())
             m_middleBreach.gameObject.AddComponent<Rigidbody>();
-        AkSoundEngine.PostEvent(AK.EVENTS.PLAY_SFX_WATER_BREACH, m_middleBreach.gameObject);
 	}
 
     private void Update()
@@ -163,5 +162,16 @@ public class Breach : MonoBehaviour
         VibrationBreachSpot[] spots = GetComponentsInChildren<VibrationBreachSpot>();
         foreach(VibrationBreachSpot spot in spots)
             spot.Rearm();
+    }
+
+    public void PlaySound()
+    {
+        AkSoundEngine.PostEvent(AK.EVENTS.PLAY_SFX_WATER_BREACH, m_middleBreach.gameObject);
+    }
+
+    public void StopSound()
+    {
+
+        AkSoundEngine.PostEvent(AK.EVENTS.STOP_SFX_WATER_BREACH, m_middleBreach.gameObject);
     }
 }
