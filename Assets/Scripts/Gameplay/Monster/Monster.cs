@@ -57,6 +57,18 @@ public class Monster : MonoBehaviour
     float m_anglePosition = 0;
     Timer m_timeToStayAway;
 
+    [SerializeField]
+    float m_oxygeneToRemoveWhenAttack = 20;
+    OxygeneGauge m_oxygene;
+
+    bool m_controllerLeftIsVibrating = false;
+    bool m_controllerRightIsVibrating = false;
+
+    [SerializeField]
+    float m_vibrationDuration = 3;
+    [SerializeField]
+    ushort m_vibrationForce = 3000;
+
     private void Start()
     {
         AkSoundEngine.PostEvent("Play_SFX_Monster_Calm", gameObject);
@@ -64,6 +76,7 @@ public class Monster : MonoBehaviour
         SetIrritatedTime();
 
         m_timeToStayAway = new Timer();
+        m_oxygene = GameObject.FindGameObjectWithTag("Oxygene").GetComponent<OxygeneGauge>();
     }
 
     // Update is called once per frame
@@ -141,6 +154,7 @@ public class Monster : MonoBehaviour
 
             AkSoundEngine.PostEvent("Stop_SFX_Monster_Calm", gameObject);
             AkSoundEngine.PostEvent("Play_SFX_Monster_Aggressive", gameObject);
+            AkSoundEngine.PostEvent(AK.EVENTS.PLAY_SFX_RADAR, gameObject);
         }
     }
 
@@ -156,6 +170,7 @@ public class Monster : MonoBehaviour
             if (m_randomChange)
                 SetIrritatedTime();
 
+            AkSoundEngine.PostEvent(AK.EVENTS.STOP_SFX_RADAR, gameObject);
             AkSoundEngine.PostEvent("Stop_SFX_Monster_Aggressive", gameObject);
             AkSoundEngine.PostEvent("Play_SFX_Monster_Calm", gameObject);
         }
@@ -174,7 +189,10 @@ public class Monster : MonoBehaviour
 
                 if (m_randomChange)
                     SetIrritatedTime();
-
+                
+                StartCoroutine(LongVibrationControllerLeft());
+                StartCoroutine(LongVibrationControllerRight());
+                AkSoundEngine.PostEvent(AK.EVENTS.STOP_SFX_RADAR, gameObject);
                 AkSoundEngine.PostEvent("Stop_SFX_Monster_Aggressive", gameObject);
                 AkSoundEngine.PostEvent("Play_SFX_Monster_Attack", gameObject, (uint)AkCallbackType.AK_EndOfEvent, TerminateAngry, null);
             }
@@ -187,6 +205,7 @@ public class Monster : MonoBehaviour
         {
             m_state = MonsterState.CALM;
 
+            m_oxygene.RemoveOxygene(m_oxygeneToRemoveWhenAttack);
             m_submarine.OpenBreach();
             m_submarine.StartSway();
         }
@@ -221,6 +240,30 @@ public class Monster : MonoBehaviour
         SetCalmTime(calmTime);
         SetIrritatedTime(irritatedTime);
         m_state = MonsterState.CALM;
+    }
+
+    IEnumerator LongVibrationControllerLeft()
+    {
+        m_controllerLeftIsVibrating = true;
+
+        for (float i = 0; i < m_vibrationDuration; i += Time.deltaTime)
+        {
+            SteamVR_Controller.Input((int)m_controllerLeft.index).TriggerHapticPulse(m_vibrationForce);
+            yield return null;
+        }
+        m_controllerLeftIsVibrating = false;
+    }
+
+    IEnumerator LongVibrationControllerRight()
+    {
+        m_controllerRightIsVibrating = true;
+
+        for (float i = 0; i < m_vibrationDuration; i += Time.deltaTime)
+        {
+            SteamVR_Controller.Input((int)m_controllerRight.index).TriggerHapticPulse(m_vibrationForce);
+            yield return null;
+        }
+        m_controllerRightIsVibrating = false;
     }
 
 }

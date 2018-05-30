@@ -39,6 +39,8 @@ public class Submarine : MonoBehaviour {
 
     public void OpenBreach()
     {
+        
+
         foreach(Breach breach in m_breaches)
         {
             if(!breach.gameObject.activeSelf)

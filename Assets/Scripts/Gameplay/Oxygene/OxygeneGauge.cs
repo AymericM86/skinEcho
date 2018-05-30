@@ -72,6 +72,7 @@ public class OxygeneGauge : MonoBehaviour
         {
             // Todo die
             Debug.Log("Dead ! ");
+            AkSoundEngine.PostEvent((int)Wwise_ID_Enum_EVENTS.PLAY_DEATH, gameObject);
             m_timeBeforeRespawn.UpdateTimer();
             if(m_timeBeforeRespawn.IsTimedOut())
             {
@@ -104,9 +105,7 @@ public class OxygeneGauge : MonoBehaviour
 
     public void DecreaseOxygene()
     {
-        m_oxygeneLevel -= m_oxygeneToRemove;
-        if (m_oxygeneLevel < 0)
-            m_oxygeneLevel = 0;
+        RemoveOxygene(m_oxygeneToRemove);
     }
 
     public void SetCheckPoint(GameObject go)
@@ -120,5 +119,12 @@ public class OxygeneGauge : MonoBehaviour
         m_oxygeneLevel = value;
         if (m_oxygeneLevel > 100)
             m_oxygeneLevel = 100;
+    }
+
+    public void RemoveOxygene(float remove)
+    {
+        m_oxygeneLevel -= remove;
+        if (m_oxygeneLevel < 0)
+            m_oxygeneLevel = 0;
     }
 }

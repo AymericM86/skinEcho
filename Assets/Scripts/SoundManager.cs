@@ -23,8 +23,8 @@ public class SoundManager : MonoBehaviour {
     // Use this for initialization
     void Start ()
     {
-        /*AkSoundEngine.SetRTPCValue("", m_volumeVoices);
-        AkSoundEngine.SetRTPCValue("", m_volumeSFX);*/
+        AkSoundEngine.SetRTPCValue(AK.GAME_PARAMETERS.RTPC_MUSIC_VOLUME, m_volumeVoices);
+        AkSoundEngine.SetRTPCValue(AK.GAME_PARAMETERS.RTPC_SFX_VOLUME, m_volumeSFX);
     }
 	
 	// Update is called once per frame
@@ -50,7 +50,7 @@ public class SoundManager : MonoBehaviour {
         }
 
 
-        /*AkSoundEngine.SetRTPCValue("", m_volumeVoices);
-        AkSoundEngine.SetRTPCValue("", m_volumeSFX);*/
+        AkSoundEngine.SetRTPCValue(AK.GAME_PARAMETERS.RTPC_MUSIC_VOLUME, m_volumeVoices);
+        AkSoundEngine.SetRTPCValue(AK.GAME_PARAMETERS.RTPC_SFX_VOLUME, m_volumeSFX);
     }
 }
