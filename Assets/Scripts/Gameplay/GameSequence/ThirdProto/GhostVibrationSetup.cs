@@ -18,6 +18,7 @@ public class GhostVibrationSetup : GameSequence
 
     public override bool IsTerminated()
     {
+        m_randomVibration.enabled = true;
         m_randomVibration.Setup(m_vibrationDuration, m_minTimeBeforeVibration, m_maxTimeBeforeVibration);
         return true; 
     }
