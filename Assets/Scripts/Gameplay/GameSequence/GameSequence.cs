@@ -36,7 +36,7 @@ public abstract class GameSequence : MonoBehaviour {
         LaunchNextSequence();
     }
 
-    private void Launch()
+    public void Launch()
     {
         m_isRunning = true;
         gameObject.SetActive(true);

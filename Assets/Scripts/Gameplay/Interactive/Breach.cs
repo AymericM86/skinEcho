@@ -23,7 +23,7 @@ public class Breach : MonoBehaviour
     VibrationBreachSpot m_middleBreach = null;
 
     // Use this for initialization
-    void Start ()
+    void Awake ()
     {
         List<Vector3> points = GetPoints();
 

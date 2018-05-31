@@ -221,6 +221,7 @@ public class Monster : MonoBehaviour
             m_state = MonsterState.CALM;
 
             m_oxygene.RemoveOxygene(m_oxygeneToRemoveWhenAttack);
+            AkSoundEngine.PostEvent("PLAY_84", m_oxygene.gameObject);
             m_submarine.OpenBreach();
             m_submarine.StartSway();
         }

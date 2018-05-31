@@ -43,8 +43,9 @@ public class OxygeneGauge : MonoBehaviour
     private GameObject m_checkpoint;
     private float m_oxygeneAtCheckPoint = 100;
 
-    [SerializeField]
-    private Timer m_timeBeforeRespawn;
+    bool m_playingDeathSound = false;
+
+    RandomSoundPlayer m_randomSoundUnder8Percent;
 
     void SetStages()
     {
@@ -70,22 +71,10 @@ public class OxygeneGauge : MonoBehaviour
     {
         if(m_oxygeneLevel <= 0)
         {
-            // Todo die
-            Debug.Log("Dead ! ");
-            AkSoundEngine.PostEvent((int)Wwise_ID_Enum_EVENTS.PLAY_DEATH, gameObject);
-            m_timeBeforeRespawn.UpdateTimer();
-            if(m_timeBeforeRespawn.IsTimedOut())
+            if (!m_playingDeathSound)
             {
-                m_oxygeneLevel = Mathf.Clamp(m_oxygeneToAddAfterDeath + m_oxygeneAtCheckPoint, 0, 100);
-                GameSequence sequence = m_checkpoint.GetComponent<GameSequence>();
-                while (sequence != null)
-                {
-                    sequence.Rearm();
-                    sequence.gameObject.SetActive(false);
-                    sequence = sequence.GetNextSequence();
-                }
-                m_checkpoint.SetActive(true);
-                m_timeBeforeRespawn.Restart();
+                AkSoundEngine.PostEvent((int)Wwise_ID_Enum_EVENTS.PLAY_DEATH, gameObject, (uint)AkCallbackType.AK_EndOfEvent, Terminate, null);
+                m_playingDeathSound = true;
             }
             
         }
@@ -97,10 +86,20 @@ public class OxygeneGauge : MonoBehaviour
 
             if(stage.m_percentage >= m_oxygeneLevel)
             {
+                if(stage.m_percentage == 10)
+                {
+                    AkSoundEngine.PostEvent("", gameObject);
+                }
+
                 stage.Trigger();
                 AkSoundEngine.PostEvent(stage.m_soundName, gameObject);
             }
         }
+
+        if (m_oxygeneLevel <= 8)
+            m_randomSoundUnder8Percent.enabled = true;
+        else
+            m_randomSoundUnder8Percent.enabled = false;
 	}
 
     public void DecreaseOxygene()
@@ -129,7 +128,27 @@ public class OxygeneGauge : MonoBehaviour
     public void RemoveOxygene(float remove)
     {
         m_oxygeneLevel -= remove;
+        
         if (m_oxygeneLevel < 0)
             m_oxygeneLevel = 0;
+    }
+
+    void Terminate(object in_cookie, AkCallbackType in_type, object in_info)
+    {
+        if (in_type == AkCallbackType.AK_EndOfEvent)
+        {
+            Refill(m_oxygeneAtCheckPoint + m_oxygeneToAddAfterDeath);
+            GameSequence sequence = m_checkpoint.GetComponent<GameSequence>();
+            while (sequence != null)
+            {
+                sequence.Rearm();
+                sequence.gameObject.SetActive(false);
+                sequence = sequence.GetNextSequence();
+            }
+            m_checkpoint.SetActive(true);
+            m_playingDeathSound = false;
+
+            m_checkpoint.GetComponent<GameSequence>().Launch();
+        }
     }
 }

@@ -15,6 +15,7 @@ public class CloseBreach : GameSequence {
 
     public override void Rearm()
     {
+        m_breach.StopSound();
         m_breach.Rearm();
     }
 

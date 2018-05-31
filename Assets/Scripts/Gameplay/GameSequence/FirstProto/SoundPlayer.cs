@@ -10,6 +10,18 @@ public class SoundPlayer : GameSequence
     [SerializeField]
     Timer m_timeBeforeNext;
 
+    [Header("Vibrations")]
+    [SerializeField]
+    bool m_addVibration = false;
+    [SerializeField]
+    ushort m_vibrationIntensity = 3000;
+    [Header("Not necessary if add vibration is not checked")]
+    [SerializeField]
+    protected SteamVR_TrackedObject m_controllerLeft;
+    [SerializeField]
+    protected SteamVR_TrackedObject m_controllerRight;
+
+
     public override bool IsTerminated()
     {
         return m_isTerminated && m_timeBeforeNext.IsTimedOut();
@@ -19,10 +31,16 @@ public class SoundPlayer : GameSequence
     public override void DoInStart ()
     {
         Rigidbody body = gameObject.AddComponent<Rigidbody>();
-        body.isKinematic = true;
-        body.useGravity = false;
+        if(body)
+        {
+            body.isKinematic = true;
+            body.useGravity = false;
+        }
         AkSoundEngine.PostEvent((uint)m_eventName, gameObject, (uint)AkCallbackType.AK_EndOfEvent, Terminate, null);
-	}
+
+        StartCoroutine(LongVibrationControllerLeft());
+        StartCoroutine(LongVibrationControllerRight());
+    }
 
     public override void DoInUpdate()
     {
@@ -50,5 +68,25 @@ public class SoundPlayer : GameSequence
     public override void Rearm()
     {
         m_isTerminated = false;
+    }
+
+    
+    IEnumerator LongVibrationControllerLeft()
+    {
+
+        while (!m_isTerminated)
+        {
+            SteamVR_Controller.Input((int)m_controllerLeft.index).TriggerHapticPulse(m_vibrationIntensity);
+            yield return null;
+        }
+    }
+
+    IEnumerator LongVibrationControllerRight()
+    {
+        while(!m_isTerminated)
+        {
+            SteamVR_Controller.Input((int)m_controllerRight.index).TriggerHapticPulse(m_vibrationIntensity);
+            yield return null;
+        }
     }
 }

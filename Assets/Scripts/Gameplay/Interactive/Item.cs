@@ -19,6 +19,7 @@ public class Item : VibrationSpot
                     m_playingSound = true;
                     
                     m_controllerLeft.gameObject.tag = gameObject.tag;
+                    m_controllerRight.gameObject.tag = gameObject.tag;
                 }
                 else
                 {
@@ -39,6 +40,7 @@ public class Item : VibrationSpot
                     AkSoundEngine.PostEvent("Play_SFX_Welder_Take", gameObject, (uint)AkCallbackType.AK_EndOfEvent, TerminateFinalSound, null);
                     m_playingSound = true;
 
+                    m_controllerLeft.gameObject.tag = gameObject.tag;
                     m_controllerRight.gameObject.tag = gameObject.tag;
                 }
                 else
