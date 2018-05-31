@@ -36,8 +36,8 @@ public class Breach : MonoBehaviour
             spot.transform.parent = transform;
             VibrationBreachSpot component = spot.GetComponent<VibrationBreachSpot>();
             component.SetControllers(m_controllerLeft,m_controllerRight);
-
-            if (cpt == points.Count / 2)
+            
+            if (m_middleBreach == null || cpt == points.Count / 2)
             {
                 m_middleBreach = component;
             }

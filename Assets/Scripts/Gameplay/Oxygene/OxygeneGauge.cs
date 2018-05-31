@@ -119,6 +119,11 @@ public class OxygeneGauge : MonoBehaviour
         m_oxygeneLevel = value;
         if (m_oxygeneLevel > 100)
             m_oxygeneLevel = 100;
+
+        foreach(OxygeneStage stage in m_stages)
+        {
+            stage.Restart(m_oxygeneLevel);
+        }
     }
 
     public void RemoveOxygene(float remove)

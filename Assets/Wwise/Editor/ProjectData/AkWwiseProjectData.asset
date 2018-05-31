@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{D1B5A9E8-5947-45C1-B2F0-400D504E3082}'
-    m_lastTimePsrt1: -1657117707
-    m_lastTimePart2: -1999256248
+    m_lastTimePsrt1: 1609152603
+    m_lastTimePart2: -1999255828
     List:
     - Name: Play_01
       Path: Default Work Unit\NEW-Voices-\Play_01
@@ -579,6 +579,146 @@ MonoBehaviour:
       minDuration: 0
       maxDuration: 0
       maxAttenuation: 0
+    - Name: Play_50
+      Path: Default Work Unit\NEW-Voices-\Play_50
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: NEW-Voices-
+        ObjectType: 4
+      - ElementName: Play_50
+        ObjectType: 3
+      ID: -1176452279
+      Guid: b0c9b22b5a48e54594c699e6d649a1fd
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Play_51
+      Path: Default Work Unit\NEW-Voices-\Play_51
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: NEW-Voices-
+        ObjectType: 4
+      - ElementName: Play_51
+        ObjectType: 3
+      ID: -1176452280
+      Guid: 8f58dbb5dbafcd45bde96b9ac410c9ca
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Play_52
+      Path: Default Work Unit\NEW-Voices-\Play_52
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: NEW-Voices-
+        ObjectType: 4
+      - ElementName: Play_52
+        ObjectType: 3
+      ID: -1176452277
+      Guid: 2721da9613edef4bada8775bd2001890
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Play_53
+      Path: Default Work Unit\NEW-Voices-\Play_53
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: NEW-Voices-
+        ObjectType: 4
+      - ElementName: Play_53
+        ObjectType: 3
+      ID: -1176452278
+      Guid: 990cfa2083c6b1419180621f55ad5bbe
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Play_54
+      Path: Default Work Unit\NEW-Voices-\Play_54
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: NEW-Voices-
+        ObjectType: 4
+      - ElementName: Play_54
+        ObjectType: 3
+      ID: -1176452275
+      Guid: 0aed61ec08507f44b16e4069ad1f5eb0
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Play_55
+      Path: Default Work Unit\NEW-Voices-\Play_55
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: NEW-Voices-
+        ObjectType: 4
+      - ElementName: Play_55
+        ObjectType: 3
+      ID: -1176452276
+      Guid: aa960c3cb085614282e2a4e4ed736604
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Play_56
+      Path: Default Work Unit\NEW-Voices-\Play_56
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: NEW-Voices-
+        ObjectType: 4
+      - ElementName: Play_56
+        ObjectType: 3
+      ID: -1176452273
+      Guid: 5b7e9b04de2de641bb77f9bcfbe2f19a
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Play_57
+      Path: Default Work Unit\NEW-Voices-\Play_57
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: NEW-Voices-
+        ObjectType: 4
+      - ElementName: Play_57
+        ObjectType: 3
+      ID: -1176452274
+      Guid: 85519732e584044f9df1a918fd679d88
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Play_58
+      Path: Default Work Unit\NEW-Voices-\Play_58
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: NEW-Voices-
+        ObjectType: 4
+      - ElementName: Play_58
+        ObjectType: 3
+      ID: -1176452287
+      Guid: a915f8c2804d9445a434318e1baa768e
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Play_59
+      Path: Default Work Unit\NEW-Voices-\Play_59
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: NEW-Voices-
+        ObjectType: 4
+      - ElementName: Play_59
+        ObjectType: 3
+      ID: -1176452288
+      Guid: bb63edfbf8c5184293f8e22279f8ee4e
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
     - Name: Play_60
       Path: Default Work Unit\NEW-Voices-\Play_60
       PathAndIcons:
@@ -747,6 +887,198 @@ MonoBehaviour:
       minDuration: 0
       maxDuration: 0
       maxAttenuation: 0
+    - Name: Play_80
+      Path: Default Work Unit\NEW-Voices-\AI\Play_80
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: NEW-Voices-
+        ObjectType: 4
+      - ElementName: AI
+        ObjectType: 4
+      - ElementName: Play_80
+        ObjectType: 3
+      ID: -991898374
+      Guid: f3f617f1fa839c4c88e9dc6b40c476a7
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Play_81
+      Path: Default Work Unit\NEW-Voices-\AI\Play_81
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: NEW-Voices-
+        ObjectType: 4
+      - ElementName: AI
+        ObjectType: 4
+      - ElementName: Play_81
+        ObjectType: 3
+      ID: -991898373
+      Guid: dd6cd90cd9a5294a886bb3dc6a44f008
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Play_82
+      Path: Default Work Unit\NEW-Voices-\AI\Play_82
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: NEW-Voices-
+        ObjectType: 4
+      - ElementName: AI
+        ObjectType: 4
+      - ElementName: Play_82
+        ObjectType: 3
+      ID: -991898376
+      Guid: f5df6e37a3709f47ab2db54f9ed8eadd
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Play_83
+      Path: Default Work Unit\NEW-Voices-\AI\Play_83
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: NEW-Voices-
+        ObjectType: 4
+      - ElementName: AI
+        ObjectType: 4
+      - ElementName: Play_83
+        ObjectType: 3
+      ID: -991898375
+      Guid: 22df8d21d118eb4e884e3bbadaf2f3ce
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Play_84
+      Path: Default Work Unit\NEW-Voices-\AI\Play_84
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: NEW-Voices-
+        ObjectType: 4
+      - ElementName: AI
+        ObjectType: 4
+      - ElementName: Play_84
+        ObjectType: 3
+      ID: -991898370
+      Guid: 9c8713e686494d46bf9c05b05564dc2e
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Play_85
+      Path: Default Work Unit\NEW-Voices-\AI\Play_85
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: NEW-Voices-
+        ObjectType: 4
+      - ElementName: AI
+        ObjectType: 4
+      - ElementName: Play_85
+        ObjectType: 3
+      ID: -991898369
+      Guid: b7dec790bd4f484a9a48392a80f3bfdf
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Play_86
+      Path: Default Work Unit\NEW-Voices-\AI\Play_86
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: NEW-Voices-
+        ObjectType: 4
+      - ElementName: AI
+        ObjectType: 4
+      - ElementName: Play_86
+        ObjectType: 3
+      ID: -991898372
+      Guid: 8887d5bd2b8dc14e90861626ebe5f151
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Play_87
+      Path: Default Work Unit\NEW-Voices-\AI\Play_87
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: NEW-Voices-
+        ObjectType: 4
+      - ElementName: AI
+        ObjectType: 4
+      - ElementName: Play_87
+        ObjectType: 3
+      ID: -991898371
+      Guid: 05e71335a83e4742a0a00b1db1a09228
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Play_88
+      Path: Default Work Unit\NEW-Voices-\AI\Play_88
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: NEW-Voices-
+        ObjectType: 4
+      - ElementName: AI
+        ObjectType: 4
+      - ElementName: Play_88
+        ObjectType: 3
+      ID: -991898382
+      Guid: c042e17ed77d1a4bb4286ad79ecee931
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Play_89
+      Path: Default Work Unit\NEW-Voices-\AI\Play_89
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: NEW-Voices-
+        ObjectType: 4
+      - ElementName: AI
+        ObjectType: 4
+      - ElementName: Play_89
+        ObjectType: 3
+      ID: -991898381
+      Guid: 9d1ed8817e12ef44b263e38aa0f1cc42
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Play_90
+      Path: Default Work Unit\NEW-Voices-\AI\Play_90
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: NEW-Voices-
+        ObjectType: 4
+      - ElementName: AI
+        ObjectType: 4
+      - ElementName: Play_90
+        ObjectType: 3
+      ID: -975120787
+      Guid: 034b1f15d24ae74881c3930f0e090b27
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
+    - Name: Play_91
+      Path: Default Work Unit\NEW-Voices-\AI\Play_91
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: NEW-Voices-
+        ObjectType: 4
+      - ElementName: AI
+        ObjectType: 4
+      - ElementName: Play_91
+        ObjectType: 3
+      ID: -975120788
+      Guid: 4581f489c906234287391f5ce2eaedee
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
     - Name: Play_Death
       Path: Default Work Unit\Play_Death
       PathAndIcons:
@@ -774,7 +1106,7 @@ MonoBehaviour:
       Guid: 28e5fe388ba27346b34cc25b7b118dd6
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 2000000
+      maxAttenuation: 0
     - Name: Play_Niveau_Ox_15
       Path: Default Work Unit\Voices\Oxygen Level\Play_Niveau_Ox_15
       PathAndIcons:
@@ -790,7 +1122,7 @@ MonoBehaviour:
       Guid: e2cd540ce4dd5542aee896a3baef9290
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 2000000
+      maxAttenuation: 0
     - Name: Play_Niveau_Ox_25
       Path: Default Work Unit\Voices\Oxygen Level\Play_Niveau_Ox_25
       PathAndIcons:
@@ -806,7 +1138,7 @@ MonoBehaviour:
       Guid: 8094630029032448b88849b87a7c3352
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 2000000
+      maxAttenuation: 0
     - Name: Play_Niveau_Ox_5
       Path: Default Work Unit\Voices\Oxygen Level\Play_Niveau_Ox_5
       PathAndIcons:
@@ -822,7 +1154,7 @@ MonoBehaviour:
       Guid: 7996bc6d8d064a429fe734a637bc7be4
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 2000000
+      maxAttenuation: 0
     - Name: Play_Niveau_Ox_50
       Path: Default Work Unit\Voices\Oxygen Level\Play_Niveau_Ox_50
       PathAndIcons:
@@ -838,7 +1170,7 @@ MonoBehaviour:
       Guid: a9c7ac6c4857e440bfa562fbf1fbefe2
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 2000000
+      maxAttenuation: 0
     - Name: Play_Niveau_Ox_75
       Path: Default Work Unit\Voices\Oxygen Level\Play_Niveau_Ox_75
       PathAndIcons:
@@ -854,7 +1186,7 @@ MonoBehaviour:
       Guid: 4f040b5c8b97984781529d48bb8df7fd
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 2000000
+      maxAttenuation: 0
     - Name: Play_Proto_2_Voix_004
       Path: Default Work Unit\Voices\Voix_Radio\Play_Proto_2_Voix_004
       PathAndIcons:
@@ -870,7 +1202,7 @@ MonoBehaviour:
       Guid: c1e4cdfdd7329044a34792a5d9d309f4
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 2000000
+      maxAttenuation: 0
     - Name: Play_Proto_2_Voix_005
       Path: Default Work Unit\Voices\Voix_Radio\Play_Proto_2_Voix_005
       PathAndIcons:
@@ -886,7 +1218,7 @@ MonoBehaviour:
       Guid: 992b02b649fff8498538ba286d0dd263
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 2000000
+      maxAttenuation: 0
     - Name: Play_Proto_2_Voix_006
       Path: Default Work Unit\Voices\Voix_Radio\Play_Proto_2_Voix_006
       PathAndIcons:
@@ -902,7 +1234,7 @@ MonoBehaviour:
       Guid: ba1dffbfc620684fa99ca2088ffe840c
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 2000000
+      maxAttenuation: 0
     - Name: Play_Proto_2_Voix_007
       Path: Default Work Unit\Voices\Voix_Radio\Play_Proto_2_Voix_007
       PathAndIcons:
@@ -918,7 +1250,7 @@ MonoBehaviour:
       Guid: 9e03923e336e9e45949bbaef5e1a236e
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 2000000
+      maxAttenuation: 0
     - Name: Play_Proto_2_Voix_008
       Path: Default Work Unit\Voices\Voix_Radio\Play_Proto_2_Voix_008
       PathAndIcons:
@@ -934,7 +1266,7 @@ MonoBehaviour:
       Guid: 45e8c71e9aac804f906f0ff5acd7172c
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 2000000
+      maxAttenuation: 0
     - Name: Play_Proto_2_Voix_009
       Path: Default Work Unit\Voices\Voix_Radio\Play_Proto_2_Voix_009
       PathAndIcons:
@@ -950,7 +1282,7 @@ MonoBehaviour:
       Guid: 5889efaa553d5a45adff1b1ba1326397
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 2000000
+      maxAttenuation: 0
     - Name: Play_Proto_2_Voix_010
       Path: Default Work Unit\Voices\Voix_Radio\Play_Proto_2_Voix_010
       PathAndIcons:
@@ -966,7 +1298,7 @@ MonoBehaviour:
       Guid: beb017ddbb7eb743ba1bf6fd67e05416
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 2000000
+      maxAttenuation: 0
     - Name: Play_Proto_2_Voix_011
       Path: Default Work Unit\Voices\Voix_Radio\Play_Proto_2_Voix_011
       PathAndIcons:
@@ -982,7 +1314,7 @@ MonoBehaviour:
       Guid: 889ce719d0ff9043a1447e4269d9b74a
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 2000000
+      maxAttenuation: 0
     - Name: Play_Proto_2_Voix_012
       Path: Default Work Unit\Voices\Voix_Radio\Play_Proto_2_Voix_012
       PathAndIcons:
@@ -998,7 +1330,7 @@ MonoBehaviour:
       Guid: c1e17702fa3c8e4684ef5a871030d364
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 2000000
+      maxAttenuation: 0
     - Name: Play_Proto_2_Voix_AI_001
       Path: Default Work Unit\Voices\Voix_AI\Play_Proto_2_Voix_AI_001
       PathAndIcons:
@@ -1014,7 +1346,7 @@ MonoBehaviour:
       Guid: 89572502f14ecd4a9998cb707eb6e7ef
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 2000000
+      maxAttenuation: 0
     - Name: Play_Proto_2_Voix_AI_002
       Path: Default Work Unit\Voices\Voix_AI\Play_Proto_2_Voix_AI_002
       PathAndIcons:
@@ -1030,7 +1362,7 @@ MonoBehaviour:
       Guid: 29d3d5fef7e51f4f86643fd27c90b805
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 2000000
+      maxAttenuation: 0
     - Name: Play_Proto_2_Voix_AI_003
       Path: Default Work Unit\Voices\Voix_AI\Play_Proto_2_Voix_AI_003
       PathAndIcons:
@@ -1046,7 +1378,7 @@ MonoBehaviour:
       Guid: a504aa0fe0aa574fbf696c3ce65b677c
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 2000000
+      maxAttenuation: 0
     - Name: Play_Radio_Voice_Start
       Path: Default Work Unit\Voices\Voix_Radio\Play_Radio_Voice_Start
       PathAndIcons:
@@ -1062,7 +1394,7 @@ MonoBehaviour:
       Guid: b44ea88714a80d46b8b78e6887f6ecc0
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 2000000
+      maxAttenuation: 0
     - Name: Play_SFX_Ambiance_01
       Path: Default Work Unit\Play_SFX_Ambiance_01
       PathAndIcons:
@@ -1086,7 +1418,7 @@ MonoBehaviour:
       Guid: f0870ffd05eaac4eb79983af857bd803
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 2000000
+      maxAttenuation: 0
     - Name: Play_SFX_Button_Touch
       Path: Default Work Unit\Play_SFX_Button_Touch
       PathAndIcons:
@@ -1098,7 +1430,7 @@ MonoBehaviour:
       Guid: b6fcbde678fa3a40bc124a7815de068e
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 2000000
+      maxAttenuation: 0
     - Name: Play_SFX_Monster_Aggressive
       Path: Default Work Unit\Monster\Play_SFX_Monster_Aggressive
       PathAndIcons:
@@ -1166,7 +1498,7 @@ MonoBehaviour:
       Guid: edca341029309142b893430d03829fa9
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 2000000
+      maxAttenuation: 0
     - Name: Play_SFX_Welder_Take
       Path: Default Work Unit\Welder\Play_SFX_Welder_Take
       PathAndIcons:
@@ -1180,7 +1512,7 @@ MonoBehaviour:
       Guid: d6e6fd0c9d295f45b6ba80008c744b4b
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 2000000
+      maxAttenuation: 0
     - Name: Play_SFX_Welding
       Path: Default Work Unit\Welder\Play_SFX_Welding
       PathAndIcons:
@@ -1194,7 +1526,7 @@ MonoBehaviour:
       Guid: 69f1c96ffed30d49b7e93f9a872f0c0e
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 2000000
+      maxAttenuation: 0
     - Name: Play_SFX_Welding_Air
       Path: Default Work Unit\Welder\Play_SFX_Welding_Air
       PathAndIcons:
@@ -1208,7 +1540,7 @@ MonoBehaviour:
       Guid: 3c8e730e7f15c54ba96bc56d01b34752
       minDuration: 0
       maxDuration: 0
-      maxAttenuation: 2000000
+      maxAttenuation: 0
     - Name: Stop_Radio_Voice_Start
       Path: Default Work Unit\Voices\Voix_Radio\Stop_Radio_Voice_Start
       PathAndIcons:
@@ -1685,6 +2017,9 @@ MonoBehaviour:
       Guid: 8e474652dac50c4ea0dec98d1479529a
   ExpandedItems:
   - /Wwise_SkinEcho
+  - /Wwise_SkinEcho/Events
+  - /Wwise_SkinEcho/Events/Default Work Unit
+  - /Wwise_SkinEcho/Events/Default Work Unit/Monster
   m_lastPopulateTimePsrt1: 0
   m_lastPopulateTimePart2: 0
   autoPopulateEnabled: 1
