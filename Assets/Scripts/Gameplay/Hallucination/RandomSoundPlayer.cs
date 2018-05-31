@@ -35,7 +35,7 @@ public class RandomSoundPlayer : MonoBehaviour
 
     Timer m_timer = new Timer();
 
-    List<Wwise_ID_Enum_EVENTS> m_soundsPlayed;
+    List<Wwise_ID_Enum_EVENTS> m_soundsPlayed = new List<Wwise_ID_Enum_EVENTS>();
 
     private void Start()
     {

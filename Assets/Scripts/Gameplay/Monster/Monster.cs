@@ -69,6 +69,11 @@ public class Monster : MonoBehaviour
     [SerializeField]
     ushort m_vibrationForce = 3000;
 
+    bool m_hasAttackOneTime = false;
+
+    [SerializeField]
+    Rigidbody m_radio;
+
     private void Start()
     {
         AkSoundEngine.PostEvent("Play_SFX_Monster_Calm", gameObject);
@@ -183,18 +188,28 @@ public class Monster : MonoBehaviour
             if((m_controllerLeft.CompareTag("Blowtorch") && SteamVR_Controller.Input((int)m_controllerLeft.index).GetHairTrigger())
                 || (m_controllerRight.CompareTag("Blowtorch") && SteamVR_Controller.Input((int)m_controllerRight.index).GetHairTrigger()))
             {
-                m_state = MonsterState.ANGRY;
+                if(!m_hasAttackOneTime)
+                {
+                    m_timeInvinsible.Restart();
+                    AkSoundEngine.PostEvent(unchecked((uint)Wwise_ID_Enum_EVENTS.PLAY_29), m_radio.gameObject);
+                    m_hasAttackOneTime = true;
+                }
+                else
+                {
+                    m_state = MonsterState.ANGRY;
 
-                m_soundAngryComplete = false;
+                    m_soundAngryComplete = false;
 
-                if (m_randomChange)
-                    SetIrritatedTime();
-                
-                StartCoroutine(LongVibrationControllerLeft());
-                StartCoroutine(LongVibrationControllerRight());
-                AkSoundEngine.PostEvent(AK.EVENTS.STOP_SFX_RADAR, gameObject);
-                AkSoundEngine.PostEvent("Stop_SFX_Monster_Aggressive", gameObject);
-                AkSoundEngine.PostEvent("Play_SFX_Monster_Attack", gameObject, (uint)AkCallbackType.AK_EndOfEvent, TerminateAngry, null);
+                    if (m_randomChange)
+                        SetIrritatedTime();
+
+                    StartCoroutine(LongVibrationControllerLeft());
+                    StartCoroutine(LongVibrationControllerRight());
+                    AkSoundEngine.PostEvent(AK.EVENTS.STOP_SFX_RADAR, gameObject);
+                    AkSoundEngine.PostEvent("Stop_SFX_Monster_Aggressive", gameObject);
+                    AkSoundEngine.PostEvent("Play_SFX_Monster_Attack", gameObject, (uint)AkCallbackType.AK_EndOfEvent, TerminateAngry, null);
+
+                }
             }
         }
     }
