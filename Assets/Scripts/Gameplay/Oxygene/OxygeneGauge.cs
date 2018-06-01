@@ -45,6 +45,7 @@ public class OxygeneGauge : MonoBehaviour
 
     bool m_playingDeathSound = false;
 
+    [SerializeField]
     RandomSoundPlayer m_randomSoundUnder8Percent;
 
     void SetStages()
