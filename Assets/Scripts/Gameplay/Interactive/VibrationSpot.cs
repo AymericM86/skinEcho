@@ -23,8 +23,6 @@ public abstract class VibrationSpot : MonoBehaviour {
     [SerializeField]
     protected SteamVR_TrackedObject m_controllerRight;
     
-    private bool m_vibrate1 = false;
-    private bool m_vibrate2 = false;
     protected bool m_isFound = false;
     protected bool m_playingSound = false;
     private float m_distanceStartVibratingController1 = 0;

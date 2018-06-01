@@ -17,7 +17,7 @@ public class OpenBreach : GameSequence
         if (!m_activated)
         {
             AkSoundEngine.SetRTPCValue(AK.GAME_PARAMETERS.RTPC_BREACH_SIZE, 100.0f);
-            m_breach.PlaySound();
+            m_breach.OpenForSound();
             m_activated = true;
         }
 

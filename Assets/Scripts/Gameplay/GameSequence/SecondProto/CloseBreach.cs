@@ -21,6 +21,6 @@ public class CloseBreach : GameSequence {
 
     public override void DoInStart()
     {
-        m_breach.PlaySound();
+        m_breach.OpenForGameplay();
     }
 }

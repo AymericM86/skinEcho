@@ -21,12 +21,15 @@ public class Breach : MonoBehaviour
     SteamVR_TrackedObject m_controllerRight;
 
     VibrationBreachSpot m_middleBreach = null;
+    List<VibrationBreachSpot> m_spots;
+
 
     bool m_isPlayingSound = false;
 
     // Use this for initialization
     void Awake ()
     {
+        m_spots = new List<VibrationBreachSpot>();
         List<Vector3> points = GetPoints();
 
         int cpt = 0;
@@ -37,6 +40,7 @@ public class Breach : MonoBehaviour
             spot.transform.position = point;
             spot.transform.parent = transform;
             VibrationBreachSpot component = spot.GetComponent<VibrationBreachSpot>();
+            m_spots.Add(component);
             component.SetControllers(m_controllerLeft,m_controllerRight);
             
             if (m_middleBreach == null || cpt == points.Count / 2)
@@ -71,7 +75,7 @@ public class Breach : MonoBehaviour
     List<Vector3> GetPoints()
     {
         Vector3 c = m_room.transform.position;
-        float alpha = Vector3.Angle(m_startBreach.transform.position, m_endBreach.transform.position);
+
         List<Vector3> points = new List<Vector3>();
         Vector3 u = m_startBreach.transform.position - c;
         Vector3 v = m_endBreach.transform.position - c;
@@ -86,7 +90,7 @@ public class Breach : MonoBehaviour
         {
             Vector3 point = Vector3.Slerp(u, v, (float)i / m_nbSegmentBetweenSpot);
             //point.Normalize();
-            Vector3 fromMiddle = c - point;
+
             //Debug.Log(fromMiddle.sqrMagnitude);
             points.Add(point + c);
         }
@@ -121,9 +125,7 @@ public class Breach : MonoBehaviour
 
     public bool IsTriggerred()
     {
-        VibrationBreachSpot[] spots = GetComponentsInChildren<VibrationBreachSpot>();
-
-        foreach(VibrationBreachSpot spot in spots)
+        foreach(VibrationBreachSpot spot in m_spots)
         {
             if (!spot.IsTriggered())
                 return false;
@@ -134,10 +136,9 @@ public class Breach : MonoBehaviour
     public float GetCompletionPercentage()
     {
         float result = 0;
-        VibrationBreachSpot[] spots = GetComponentsInChildren<VibrationBreachSpot>();
-        float valuePerPoint = 100.0f / (float)spots.Length;
+        float valuePerPoint = 100.0f / (float)m_spots.Count;
 
-        foreach(VibrationBreachSpot spot in spots)
+        foreach(VibrationBreachSpot spot in m_spots)
         {
             result += spot.GetCompletionLevel() * valuePerPoint;
         }
@@ -161,9 +162,12 @@ public class Breach : MonoBehaviour
 
     public void Rearm()
     {
-        VibrationBreachSpot[] spots = GetComponentsInChildren<VibrationBreachSpot>();
-        foreach(VibrationBreachSpot spot in spots)
+        foreach (VibrationBreachSpot spot in m_spots)
+        {
             spot.Rearm();
+            spot.gameObject.SetActive(false);
+        }
+        gameObject.SetActive(false);
     }
 
     public void PlaySound()
@@ -179,5 +183,31 @@ public class Breach : MonoBehaviour
     {
         m_isPlayingSound = false;
         AkSoundEngine.PostEvent(AK.EVENTS.STOP_SFX_WATER_BREACH, m_middleBreach.gameObject);
+    }
+
+    public void OpenForGameplay()
+    {
+        gameObject.SetActive(true);
+        foreach (VibrationBreachSpot spot in m_spots)
+        {
+            spot.gameObject.SetActive(true);
+            spot.enabled = true;
+            spot.GetComponent<OxygeneRemover>().enabled = true;
+        }
+
+        PlaySound();
+    }
+
+    public void OpenForSound()
+    {
+        gameObject.SetActive(true);
+        foreach (VibrationBreachSpot spot in m_spots)
+        {
+            spot.gameObject.SetActive(true);
+            spot.enabled = false;
+            spot.GetComponent<OxygeneRemover>().enabled = false;
+        }
+
+        PlaySound();
     }
 }

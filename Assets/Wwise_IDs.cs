@@ -77,6 +77,8 @@ namespace AK
         public const uint PLAY_90 = 3319846509U;
         public const uint PLAY_91 = 3319846508U;
         public const uint PLAY_DEATH = 1172822028U;
+        public const uint PLAY_ELECTRIC_GLITCHES = 2270107141U;
+        public const uint PLAY_MUSIC_DEATH = 2739477356U;
         public const uint PLAY_NIVEAU_OX_5 = 495794050U;
         public const uint PLAY_NIVEAU_OX_10 = 189687746U;
         public const uint PLAY_NIVEAU_OX_15 = 189687751U;
@@ -107,6 +109,7 @@ namespace AK
         public const uint PLAY_SFX_WELDER_TAKE = 1487639259U;
         public const uint PLAY_SFX_WELDING = 3723595182U;
         public const uint PLAY_SFX_WELDING_AIR = 3575465515U;
+        public const uint STOP_ELECTRIC_GLITCHES = 1943961027U;
         public const uint STOP_RADIO_VOICE_START = 1243176019U;
         public const uint STOP_SFX_MONSTER_AGGRESSIVE = 2321851573U;
         public const uint STOP_SFX_MONSTER_CALM = 3966185392U;
@@ -114,7 +117,6 @@ namespace AK
         public const uint STOP_SFX_WATER_BREACH = 350557031U;
         public const uint STOP_SFX_WELDING = 1302341568U;
         public const uint STOP_SFX_WELDING_AIR = 1297865509U;
-        public const uint PLAY_MUSIC_DEATH = 2739477356U;
     } 
 
     public class GAME_PARAMETERS
@@ -152,6 +154,7 @@ namespace AK
 
     public class AUX_BUSSES
     {
+        public const uint REVERB_HALLU = 3449031966U;
         public const uint REVERB_MONSTER = 1049073410U;
         public const uint REVERB_SUBMARINE = 998994920U;
     } 

@@ -190,8 +190,10 @@ public class Monster : MonoBehaviour
                 if (m_randomChange)
                     SetIrritatedTime();
 
-                StartCoroutine(LongVibrationControllerLeft());
-                StartCoroutine(LongVibrationControllerRight());
+                if(!m_controllerLeftIsVibrating)
+                    StartCoroutine(LongVibrationControllerLeft());
+                if(!m_controllerRightIsVibrating)
+                    StartCoroutine(LongVibrationControllerRight());
                 AkSoundEngine.PostEvent(AK.EVENTS.STOP_SFX_RADAR, gameObject);
                 AkSoundEngine.PostEvent("Stop_SFX_Monster_Aggressive", gameObject);
                 AkSoundEngine.PostEvent("Play_SFX_Monster_Attack", gameObject, (uint)AkCallbackType.AK_EndOfEvent, TerminateAngry, null);
