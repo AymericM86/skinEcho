@@ -45,8 +45,6 @@ public class OxygeneGauge : MonoBehaviour
 
     bool m_playingDeathSound = false;
 
-    [SerializeField]
-    RandomSoundPlayer m_randomSoundUnder8Percent;
 
     void SetStages()
     {
@@ -89,7 +87,7 @@ public class OxygeneGauge : MonoBehaviour
             {
                 if(stage.m_percentage == 10)
                 {
-                    AkSoundEngine.PostEvent("", gameObject);
+                    //AkSoundEngine.PostEvent("", gameObject);
                 }
 
                 stage.Trigger();
@@ -97,10 +95,6 @@ public class OxygeneGauge : MonoBehaviour
             }
         }
 
-        if (m_oxygeneLevel <= 8)
-            m_randomSoundUnder8Percent.enabled = true;
-        else
-            m_randomSoundUnder8Percent.enabled = false;
 	}
 
     public void DecreaseOxygene()

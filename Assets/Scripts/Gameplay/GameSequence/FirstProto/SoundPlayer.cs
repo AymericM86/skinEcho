@@ -38,8 +38,12 @@ public class SoundPlayer : GameSequence
         }
         AkSoundEngine.PostEvent((uint)m_eventName, gameObject, (uint)AkCallbackType.AK_EndOfEvent, Terminate, null);
 
-        StartCoroutine(LongVibrationControllerLeft());
-        StartCoroutine(LongVibrationControllerRight());
+        if(m_addVibration)
+        {
+            StartCoroutine(LongVibrationControllerLeft());
+            StartCoroutine(LongVibrationControllerRight());
+
+        }
     }
 
     public override void DoInUpdate()

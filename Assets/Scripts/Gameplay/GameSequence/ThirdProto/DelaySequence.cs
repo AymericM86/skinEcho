@@ -2,19 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RandomSoundSetup : GameSequence
-{
+public class DelaySequence : GameSequence {
+
     [SerializeField]
-    RandomSoundPlayer m_soundPlayer;
+    Timer m_timer;
 
     public override bool IsTerminated()
     {
-        m_soundPlayer.enabled = true;
-        return true;
+        m_timer.UpdateTimer();
+        return m_timer.IsTimedOut();
     }
 
     public override void Rearm()
     {
-        m_soundPlayer.enabled = false;
+        m_timer.Restart();
     }
 }

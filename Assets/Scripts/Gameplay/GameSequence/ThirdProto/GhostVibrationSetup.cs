@@ -22,4 +22,9 @@ public class GhostVibrationSetup : GameSequence
         m_randomVibration.Setup(m_vibrationDuration, m_minTimeBeforeVibration, m_maxTimeBeforeVibration);
         return true; 
     }
+
+    public override void Rearm()
+    {
+        m_randomVibration.enabled = false;
+    }
 }

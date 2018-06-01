@@ -22,6 +22,8 @@ public class Breach : MonoBehaviour
 
     VibrationBreachSpot m_middleBreach = null;
 
+    bool m_isPlayingSound = false;
+
     // Use this for initialization
     void Awake ()
     {
@@ -166,12 +168,16 @@ public class Breach : MonoBehaviour
 
     public void PlaySound()
     {
+        if (m_isPlayingSound)
+            return;
+
         AkSoundEngine.PostEvent(AK.EVENTS.PLAY_SFX_WATER_BREACH, m_middleBreach.gameObject);
+        m_isPlayingSound = true;
     }
 
     public void StopSound()
     {
-
+        m_isPlayingSound = false;
         AkSoundEngine.PostEvent(AK.EVENTS.STOP_SFX_WATER_BREACH, m_middleBreach.gameObject);
     }
 }

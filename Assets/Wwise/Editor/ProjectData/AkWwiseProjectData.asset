@@ -16,8 +16,8 @@ MonoBehaviour:
   - PhysicalPath: Events\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{D1B5A9E8-5947-45C1-B2F0-400D504E3082}'
-    m_lastTimePsrt1: 895880884
-    m_lastTimePart2: -1999255753
+    m_lastTimePsrt1: 1889091581
+    m_lastTimePart2: -1999255623
     List:
     - Name: Play_01
       Path: Default Work Unit\NEW-Voices-\Play_01
@@ -1091,6 +1091,30 @@ MonoBehaviour:
       minDuration: 0
       maxDuration: 0
       maxAttenuation: 0
+    - Name: Play_Electric_Glitches
+      Path: Default Work Unit\Play_Electric_Glitches
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Electric_Glitches
+        ObjectType: 3
+      ID: -2024860155
+      Guid: 0bceb2d92ad497488057c21c40420f47
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 2000000
+    - Name: Play_Music_Death
+      Path: Default Work Unit\Play_Music_Death
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Play_Music_Death
+        ObjectType: 3
+      ID: -1555489940
+      Guid: ea7fb6d4e7420945825fd274546e7cd3
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
     - Name: Play_Niveau_Ox_10
       Path: Default Work Unit\Voices\Oxygen Level\Play_Niveau_Ox_10
       PathAndIcons:
@@ -1541,6 +1565,18 @@ MonoBehaviour:
       minDuration: 0
       maxDuration: 0
       maxAttenuation: 2000000
+    - Name: Stop_Electric_Glitches
+      Path: Default Work Unit\Stop_Electric_Glitches
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Stop_Electric_Glitches
+        ObjectType: 3
+      ID: 1943961027
+      Guid: ba89b84266953e49aacb02510fe4721b
+      minDuration: 0
+      maxDuration: 0
+      maxAttenuation: 0
     - Name: Stop_Radio_Voice_Start
       Path: Default Work Unit\Voices\Voix_Radio\Stop_Radio_Voice_Start
       PathAndIcons:
@@ -1643,9 +1679,22 @@ MonoBehaviour:
   - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
     ParentPhysicalPath: 
     Guid: '{BE61F919-3006-4E78-BCC4-9AD65A681F2F}'
-    m_lastTimePsrt1: 943884856
-    m_lastTimePart2: -1999259849
+    m_lastTimePsrt1: 1889211904
+    m_lastTimePart2: -1999255623
     List:
+    - Name: Reverb_Hallu
+      Path: Default Work Unit\Master Audio Bus\Main_5_1\Reverb_Hallu
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: Main_5_1
+        ObjectType: 2
+      - ElementName: Reverb_Hallu
+        ObjectType: 1
+      ID: -845935330
+      Guid: 5498e4cdd91a0946983ba31e46662ace
     - Name: Reverb_Monster
       Path: Default Work Unit\Master Audio Bus\Main_5_1\Reverb_Monster
       PathAndIcons:
