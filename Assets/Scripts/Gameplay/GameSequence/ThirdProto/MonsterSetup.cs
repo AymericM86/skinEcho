@@ -28,6 +28,11 @@ public class MonsterSetup : GameSequence
     public override void Rearm()
     {
         if (m_disableMonsterOnCheckpoint)
+        {
             m_monster.gameObject.SetActive(false);
+            AkSoundEngine.PostEvent("Stop_SFX_Monster_Calm", m_monster.gameObject);
+            AkSoundEngine.PostEvent("Stop_SFX_Monster_Aggressive", m_monster.gameObject);
+            AkSoundEngine.PostEvent("Stop_SFX_Radar", m_monster.gameObject);
+        }
     }
 }
