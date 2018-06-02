@@ -117,6 +117,8 @@ namespace AK
         public const uint STOP_SFX_WATER_BREACH = 350557031U;
         public const uint STOP_SFX_WELDING = 1302341568U;
         public const uint STOP_SFX_WELDING_AIR = 1297865509U;
+        public const uint PLAY_SFX_MONSTER_END = 2682598130U;
+        public const uint PLAY_DEEPBREATH_ENDMUSIC = 801383969U;
     } 
 
     public class GAME_PARAMETERS
@@ -135,6 +137,7 @@ namespace AK
         public const uint SS_AIR_STORM = 3715662592U;
         public const uint SS_AIR_TIMEOFDAY = 3203397129U;
         public const uint SS_AIR_TURBULENCE = 4160247818U;
+        public const uint RTPC_VOICE_VOLUME = 1998977308U;
     } 
 
     public class BANKS

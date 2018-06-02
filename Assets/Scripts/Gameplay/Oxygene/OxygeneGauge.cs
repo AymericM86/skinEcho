@@ -68,14 +68,14 @@ public class OxygeneGauge : MonoBehaviour
 	// Update is called once per frame
 	void Update ()
     {
-        if(m_oxygeneLevel <= 0)
+        if (m_oxygeneLevel <= 0)
         {
             if (!m_playingDeathSound)
             {
                 AkSoundEngine.PostEvent((int)Wwise_ID_Enum_EVENTS.PLAY_DEATH, gameObject, (uint)AkCallbackType.AK_EndOfEvent, Terminate, null);
                 m_playingDeathSound = true;
             }
-            
+
         }
 
 		foreach(OxygeneStage stage in m_stages)
@@ -87,7 +87,7 @@ public class OxygeneGauge : MonoBehaviour
             {
                 if(stage.m_percentage == 10)
                 {
-                    //AkSoundEngine.PostEvent("", gameObject);
+                    AkSoundEngine.PostEvent("Play_Alarm_Ox", gameObject);
                 }
 
                 stage.Trigger();
@@ -142,7 +142,7 @@ public class OxygeneGauge : MonoBehaviour
             }
             m_checkpoint.SetActive(true);
             m_playingDeathSound = false;
-
+            AkSoundEngine.PostEvent("Stop_Alarm_Ox", gameObject);
             m_checkpoint.GetComponent<GameSequence>().Launch();
         }
     }

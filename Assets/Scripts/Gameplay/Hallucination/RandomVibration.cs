@@ -33,10 +33,10 @@ public class RandomVibration : MonoBehaviour
         m_timeBeforeVibration.UpdateTimer();
         if (m_timeBeforeVibration.IsTimedOut())
         {
-            if (!m_leftController.CompareTag("Blowtorch") && !m_controllerLeftIsVibrating)
+            if (!m_controllerLeftIsVibrating)
                 StartCoroutine(LongVibrationControllerLeft());
 
-            if (!m_rightController.CompareTag("Blowtorch") && !m_controllerRightIsVibrating)
+            if (!m_controllerRightIsVibrating)
                 StartCoroutine(LongVibrationControllerRight());
         }
     }
