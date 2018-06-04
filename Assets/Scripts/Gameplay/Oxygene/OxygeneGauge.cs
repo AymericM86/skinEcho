@@ -45,6 +45,11 @@ public class OxygeneGauge : MonoBehaviour
 
     bool m_playingDeathSound = false;
 
+    [SerializeField]
+    WelderSound m_welderRight;
+    [SerializeField]
+    WelderSound m_welderLeft;
+
 
     void SetStages()
     {
@@ -154,6 +159,9 @@ public class OxygeneGauge : MonoBehaviour
             }
             m_checkpoint.SetActive(true);
             m_checkpoint.GetComponent<GameSequence>().Launch();
+
+            m_welderLeft.Reset();
+            m_welderRight.Reset();
         }
     }
 }

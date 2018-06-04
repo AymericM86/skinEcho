@@ -26,6 +26,8 @@ public class WelderSound : MonoBehaviour
     public void RemoveSpot()
     {
         m_spotsInContact--;
+        if (m_spotsInContact < 0)
+            m_spotsInContact = 0;
     }
 
     private bool InContact()
@@ -75,4 +77,9 @@ public class WelderSound : MonoBehaviour
 
         m_previouslyInContact = InContact();
 	}
+
+    public void Reset()
+    {
+        m_spotsInContact = 0;
+    }
 }
