@@ -67,12 +67,12 @@ public class WelderSound : MonoBehaviour
                 }
             }
         }
+
         if(Controller.GetHairTriggerUp())
         {
-            if (!InContact())
-                AkSoundEngine.PostEvent("Stop_SFX_Welding_Air", gameObject);
-            else
-                AkSoundEngine.PostEvent("Stop_SFX_Welding", gameObject);
+            AkSoundEngine.PostEvent("Stop_SFX_Welding_Air", gameObject);
+            AkSoundEngine.PostEvent("Stop_SFX_Welding", gameObject);
+            Reset();
         }
 
         m_previouslyInContact = InContact();
