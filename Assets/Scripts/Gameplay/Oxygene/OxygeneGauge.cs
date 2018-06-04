@@ -132,6 +132,18 @@ public class OxygeneGauge : MonoBehaviour
     {
         if (in_type == AkCallbackType.AK_EndOfEvent)
         {
+            AkSoundEngine.PostEvent("Stop_Alarm_Ox", gameObject);
+
+            AkSoundEngine.PostEvent("Play_Music_Death", gameObject, (uint)AkCallbackType.AK_EndOfEvent, TerminateMusic, null);
+
+        }
+    }
+
+    void TerminateMusic(object in_cookie, AkCallbackType in_type, object in_info)
+    {
+        if (in_type == AkCallbackType.AK_EndOfEvent)
+        {
+            m_playingDeathSound = false;
             Refill(m_oxygeneAtCheckPoint + m_oxygeneToAddAfterDeath);
             GameSequence sequence = m_checkpoint.GetComponent<GameSequence>();
             while (sequence != null)
@@ -141,8 +153,6 @@ public class OxygeneGauge : MonoBehaviour
                 sequence = sequence.GetNextSequence();
             }
             m_checkpoint.SetActive(true);
-            m_playingDeathSound = false;
-            AkSoundEngine.PostEvent("Stop_Alarm_Ox", gameObject);
             m_checkpoint.GetComponent<GameSequence>().Launch();
         }
     }
